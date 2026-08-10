@@ -24,7 +24,9 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://gym-website-1-fzl3.onrender.com",
+  "https://ochrefitness.com/",
+  "https://www.ochrefitness.com/"
+
 
   // Add your Hostinger domain here later
   // "https://yourdomain.com",
