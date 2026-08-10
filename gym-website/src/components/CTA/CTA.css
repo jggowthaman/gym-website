@@ -1,0 +1,1325 @@
+/*=========================================
+ GOOGLE FONTS
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/*=========================================
+ CTA SECTION
+=========================================*/
+
+.cta{
+
+    position: relative;
+
+    width: 100%;
+
+    padding: 120px 0;
+
+    background: #080808;
+
+    overflow: hidden;
+
+}
+
+/*=========================================
+ BACKGROUND GLOW
+=========================================*/
+
+.cta::before{
+
+    content: "";
+
+    position: absolute;
+
+    width: 650px;
+
+    height: 650px;
+
+    top: -250px;
+
+    left: -220px;
+
+    border-radius: 50%;
+
+    background: rgba(207,16,45,.14);
+
+    filter: blur(170px);
+
+}
+
+.cta::after{
+
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+
+    height: 520px;
+
+    right: -180px;
+
+    bottom: -180px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.04);
+
+    filter: blur(180px);
+
+}
+
+/*=========================================
+ CONTAINER
+=========================================*/
+
+.cta-container{
+
+    position: relative;
+
+    z-index: 10;
+
+    width: min(1450px,92%);
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 44% 56%;
+
+    gap: 65px;
+
+    align-items: center;
+
+}
+
+/*=========================================
+ LEFT
+=========================================*/
+
+.cta-left{
+
+    position: relative;
+
+}
+
+.cta-tag{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 10px 24px;
+
+    border-radius: 60px;
+
+    background: rgba(255,255,255,.05);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    backdrop-filter: blur(16px);
+
+    color: #ffffff;
+
+    font-size: .82rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    font-weight: 600;
+
+}
+
+.cta-left h2{
+
+    margin-top: 28px;
+
+    color: #ffffff;
+
+    font-family: "Barlow Condensed",sans-serif;
+
+    font-size: clamp(3.8rem,5vw,5.8rem);
+
+    line-height: .92;
+
+    text-transform: uppercase;
+
+}
+
+.cta-left h2 span{
+
+    color: #cf102d;
+
+}
+
+.cta-left p{
+
+    margin-top: 25px;
+
+    max-width: 520px;
+
+    color: #bdbdbd;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+}
+
+/*=========================================
+ FEATURES
+=========================================*/
+
+.cta-features{
+
+    margin-top: 42px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 18px;
+
+}
+
+.cta-features div{
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    height: 68px;
+    padding: 0 22px;
+    border-radius: 18px;
+    background: rgb(0 0 0 / 49%);
+    border: 1px solid rgba(274, 263, 269, 0.30);
+    transition: .35s ease;
+    cursor: default;
+
+}
+
+.cta-features svg{
+
+    color: #cf102d;
+
+    font-size: 20px;
+
+    transition: .35s;
+
+}
+
+.cta-features span{
+
+    color: #ffffff;
+
+    font-size: .96rem;
+
+    font-weight: 500;
+
+}
+
+.cta-features div:hover{
+
+    transform: translateY(-8px);
+
+    background: #cf102d;
+
+    box-shadow: 0 18px 40px rgba(207,16,45,.28);
+
+}
+
+.cta-features div:hover svg{
+
+    color: #ffffff;
+
+}
+
+/*=========================================
+ ATHLETE IMAGE
+=========================================*/
+
+.cta-athlete{
+
+       display: block;
+    width: 100%;
+    max-width: 520px;
+    margin-top: -464px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    animation: floatImage 4s ease-in-out infinite;
+    position: absolute;
+    z-index: -1;
+}
+
+@keyframes floatImage{
+
+    0%{
+
+        transform: translateY(0px);
+
+    }
+
+    50%{
+
+        transform: translateY(-12px);
+
+    }
+
+    100%{
+
+        transform: translateY(0px);
+
+    }
+
+}
+
+/*=========================================
+ RIGHT CARD
+=========================================*/
+
+.cta-right{
+
+    position: relative;
+
+    padding: 60px;
+
+    border-radius: 34px;
+
+    background: rgba(255,255,255,.05);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    backdrop-filter: blur(22px);
+
+    box-shadow:
+    0 35px 90px rgba(0,0,0,.45);
+
+    overflow: hidden;
+
+}
+
+.cta-right::before{
+
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+
+    height: 220px;
+
+    top: -120px;
+
+    right: -120px;
+
+    border-radius: 50%;
+
+    background: rgba(207,16,45,.22);
+
+    filter: blur(70px);
+
+}
+
+.cta-right::after{
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 34px;
+
+    padding: 1px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,.18),
+        rgba(255,255,255,.03)
+    );
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+
+            mask-composite: exclude;
+
+    pointer-events: none;
+
+}
+
+/*=========================================
+ FORM HEADER
+=========================================*/
+
+.form-title{
+
+    position: relative;
+
+    z-index: 2;
+
+    color: #cf102d;
+
+    font-size: .85rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    font-weight: 700;
+
+}
+
+.cta-right h3{
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 16px;
+
+    color: #ffffff;
+
+    font-family: "Barlow Condensed",sans-serif;
+
+    font-size: clamp(2.8rem,4vw,4rem);
+
+    line-height: 1;
+
+    text-transform: uppercase;
+
+}
+
+.cta-right h3 span{
+
+    color: #cf102d;
+
+}
+
+.cta-right p{
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 16px;
+
+    color: #bcbcbc;
+
+    line-height: 1.8;
+
+    max-width: 520px;
+
+}
+/*=========================================
+ FORM
+=========================================*/
+
+.cta-form{
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 45px;
+
+}
+
+/*=========================================
+ FORM GROUP
+=========================================*/
+
+.form-group{
+
+    position: relative;
+
+    margin-bottom: 34px;
+
+}
+
+.form-group.textarea{
+
+    margin-bottom: 40px;
+
+}
+
+/*=========================================
+ INPUT ICON
+=========================================*/
+
+.input-icon{
+
+    position: absolute;
+
+    left: 0;
+
+    top: 18px;
+
+    color: #cf102d;
+
+    font-size: 18px;
+
+    transition: .35s ease;
+
+}
+
+/*=========================================
+ INPUTS
+=========================================*/
+
+.form-group input,
+.form-group select{
+
+    width: 100%;
+
+    height: 58px;
+
+    padding-left: 42px;
+
+    padding-right: 10px;
+
+    background: transparent;
+
+    border: none;
+
+    border-bottom: 1px solid rgba(255,255,255,.16);
+
+    outline: none;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-family: "Inter",sans-serif;
+
+    transition: .35s ease;
+
+}
+
+.form-group textarea{
+
+    width: 100%;
+
+    height: 130px;
+
+    resize: none;
+
+    padding-top: 22px;
+
+    background: transparent;
+
+    border: none;
+
+    border-bottom: 1px solid rgba(255,255,255,.16);
+
+    outline: none;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-family: "Inter",sans-serif;
+
+    transition: .35s ease;
+
+}
+
+/*=========================================
+ SELECT
+=========================================*/
+
+.form-group select{
+
+    appearance: none;
+
+    cursor: pointer;
+
+}
+
+.form-group option{
+
+    color: #000;
+
+}
+
+/*=========================================
+ LABEL
+=========================================*/
+
+.form-group label{
+
+    position: absolute;
+
+    left: 42px;
+
+    top: 18px;
+
+    color: #9d9d9d;
+
+    font-size: 15px;
+
+    pointer-events: none;
+
+    transition: .35s ease;
+
+}
+
+/*=========================================
+ FLOAT LABEL
+=========================================*/
+
+.form-group input:focus + label,
+.form-group input:valid + label,
+
+.form-group textarea:focus + label,
+.form-group textarea:valid + label,
+
+.form-group select:focus + label,
+.form-group select:valid + label{
+
+    top: -25px;
+
+    left: 0;
+
+    font-size: 12px;
+
+    color: #cf102d;
+
+    letter-spacing: .5px;
+
+}
+
+/*=========================================
+ FOCUS EFFECT
+=========================================*/
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+
+    border-color: #cf102d;
+
+}
+
+.form-group input:focus~.input-icon,
+.form-group textarea:focus~.input-icon,
+.form-group select:focus~.input-icon{
+
+    color: #ffffff;
+
+}
+
+/*=========================================
+ HOVER
+=========================================*/
+
+.form-group:hover input,
+.form-group:hover textarea,
+.form-group:hover select{
+
+    border-color: rgba(207,16,45,.55);
+
+}
+
+/*=========================================
+ PLACEHOLDER
+=========================================*/
+
+input::placeholder,
+textarea::placeholder{
+
+    color: transparent;
+
+}
+
+/*=========================================
+ ERROR
+=========================================*/
+
+.error{
+
+    display: block;
+
+    margin-top: 8px;
+
+    margin-left: 42px;
+
+    color: #ff5252;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    letter-spacing: .3px;
+
+    animation: errorFade .25s ease;
+
+}
+
+@keyframes errorFade{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateY(-6px);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/*=========================================
+ CTA BUTTON
+=========================================*/
+
+.cta-btn{
+
+    position: relative;
+
+    width: 100%;
+
+    height: 62px;
+
+    border: none;
+
+    border-radius: 60px;
+
+    background: linear-gradient(
+        135deg,
+        #cf102d,
+        #ff2147
+    );
+
+    color: #ffffff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 14px;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: .4px;
+
+    transition: .4s ease;
+
+    box-shadow:
+    0 18px 40px rgba(207,16,45,.35);
+
+}
+
+/*=========================================
+ BUTTON SHINE
+=========================================*/
+
+.cta-btn::before{
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -130%;
+
+    width: 55%;
+
+    height: 100%;
+
+    background: linear-gradient(
+
+        120deg,
+
+        transparent,
+
+        rgba(255,255,255,.45),
+
+        transparent
+
+    );
+
+    transform: skewX(-25deg);
+
+    transition: .8s ease;
+
+}
+
+.cta-btn:hover::before{
+
+    left: 140%;
+
+}
+
+/*=========================================
+ BUTTON TEXT
+=========================================*/
+
+.cta-btn span,
+.cta-btn svg{
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.cta-btn svg{
+
+    transition: .35s ease;
+
+}
+
+.cta-btn:hover svg{
+
+    transform: translateX(8px);
+
+}
+
+.cta-btn:hover{
+
+    transform: translateY(-5px);
+
+    box-shadow:
+    0 25px 55px rgba(207,16,45,.45);
+
+}
+
+/*=========================================
+ ACTIVE
+=========================================*/
+
+.cta-btn:active{
+
+    transform: scale(.98);
+
+}
+/*=========================================
+1400px
+=========================================*/
+
+@media (max-width:1400px){
+
+    .cta-container{
+
+        width:min(94%,1300px);
+
+        gap:50px;
+
+    }
+
+    .cta-left h2{
+
+        font-size:clamp(3.4rem,5vw,5rem);
+
+    }
+
+    .cta-right{
+
+        padding:50px;
+
+    }
+
+}
+
+/*=========================================
+1200px
+=========================================*/
+
+@media (max-width:1200px){
+
+    .cta-container{
+
+        gap:40px;
+
+    }
+
+    .cta-left h2{
+
+        font-size:4.2rem;
+
+    }
+
+    .cta-features{
+
+        gap:15px;
+
+    }
+
+    .cta-features div{
+
+        height:62px;
+
+        padding:0 18px;
+
+    }
+
+    .cta-right{
+
+        padding:45px;
+
+    }
+
+}
+
+/*=========================================
+992px
+=========================================*/
+
+@media (max-width:992px){
+
+    .cta{
+
+        padding:90px 0;
+
+    }
+
+    .cta-container{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+    }
+
+    .cta-left{
+
+        text-align:center;
+
+    }
+
+    .cta-left p{
+
+        margin-inline:auto;
+
+    }
+
+    .cta-features{
+
+        max-width:620px;
+
+        margin:40px auto 0;
+
+    }
+
+    .cta-athlete{
+
+        max-width:420px;
+
+        margin-top:40px;
+
+    }
+
+}
+
+/*=========================================
+768px
+=========================================*/
+
+@media (max-width:768px){
+
+    .cta{
+
+        padding:80px 0;
+
+    }
+
+    .cta-container{
+
+        width:92%;
+
+        gap:45px;
+
+    }
+
+    .cta-left h2{
+
+        font-size:3.4rem;
+
+    }
+
+    .cta-left p{
+
+        font-size:15px;
+
+        line-height:1.8;
+
+    }
+
+    .cta-features{
+
+        grid-template-columns:1fr;
+
+        gap:14px;
+
+    }
+
+    .cta-features div{
+
+        height:58px;
+
+    }
+
+    .cta-right{
+
+        padding:38px 30px;
+
+        border-radius:28px;
+
+    }
+
+    .cta-right h3{
+
+        font-size:3rem;
+
+    }
+
+}
+
+/*=========================================
+576px
+=========================================*/
+
+@media (max-width:576px){
+
+    .cta{
+
+        padding:70px 0;
+
+    }
+
+    .cta-tag{
+
+        font-size:.72rem;
+
+        padding:8px 18px;
+
+    }
+
+    .cta-left h2{
+
+        font-size:2.8rem;
+
+    }
+
+    .cta-left p{
+
+        margin-top:18px;
+
+    }
+
+    .cta-athlete{
+
+        max-width:330px;
+
+        margin-top:30px;
+
+    }
+
+    .cta-right{
+
+        padding:30px 22px;
+
+    }
+
+    .cta-right h3{
+
+        font-size:2.5rem;
+
+    }
+
+    .cta-form{
+
+        margin-top:35px;
+
+    }
+
+}
+
+/*=========================================
+480px
+=========================================*/
+
+@media (max-width:480px){
+
+    .cta{
+
+        padding:60px 0;
+
+    }
+
+    .cta-container{
+
+        width:94%;
+
+    }
+
+    .cta-left h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .cta-left p{
+
+        font-size:14px;
+
+    }
+
+    .cta-features{
+
+        margin-top:30px;
+
+        gap:12px;
+
+    }
+
+    .cta-features div{
+
+        height:54px;
+
+        padding:0 16px;
+
+        border-radius:14px;
+
+    }
+
+    .cta-features span{
+
+        font-size:.9rem;
+
+    }
+
+    .cta-right{
+
+        padding:28px 18px;
+
+        border-radius:24px;
+
+    }
+
+    .cta-right h3{
+
+        font-size:2.2rem;
+
+    }
+
+    .form-group{
+
+        margin-bottom:26px;
+
+    }
+
+    .form-group input,
+    .form-group select{
+
+        height:52px;
+
+        font-size:14px;
+
+    }
+
+    .form-group textarea{
+
+        height:110px;
+
+        font-size:14px;
+
+    }
+
+    .cta-btn{
+
+        height:54px;
+
+        font-size:14px;
+
+    }
+
+}
+
+/*=========================================
+390px
+=========================================*/
+
+@media (max-width:390px){
+
+    .cta-left h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .cta-left p{
+
+        font-size:13.5px;
+
+    }
+
+    .cta-athlete{
+
+        max-width:290px;
+
+    }
+
+    .cta-right{
+
+        padding:24px 16px;
+
+    }
+
+    .cta-right h3{
+
+        font-size:2rem;
+
+    }
+
+    .cta-features div{
+
+        height:52px;
+
+    }
+
+}
+
+/*=========================================
+375px
+=========================================*/
+
+@media (max-width:375px){
+
+    .cta-tag{
+
+        letter-spacing:1px;
+
+    }
+
+    .cta-left h2{
+
+        font-size:2rem;
+
+    }
+
+    .cta-right{
+
+        border-radius:20px;
+
+    }
+
+    .cta-right h3{
+
+        font-size:1.9rem;
+
+    }
+
+}
+
+/*=========================================
+320px
+=========================================*/
+
+@media (max-width:320px){
+
+    .cta{
+
+        padding:50px 0;
+
+    }
+
+    .cta-container{
+
+        width:95%;
+
+    }
+
+    .cta-left h2{
+
+        font-size:1.8rem;
+
+    }
+
+    .cta-left p{
+
+        font-size:13px;
+
+    }
+
+    .cta-features div{
+
+        height:48px;
+
+        padding:0 12px;
+
+    }
+
+    .cta-features span{
+
+        font-size:.82rem;
+
+    }
+
+    .cta-athlete{
+
+        max-width:250px;
+
+    }
+
+    .cta-right{
+
+        padding:20px 14px;
+
+    }
+
+    .cta-right h3{
+
+        font-size:1.7rem;
+
+    }
+
+    .form-group input,
+    .form-group select{
+
+        height:48px;
+
+        font-size:13px;
+
+    }
+
+    .form-group textarea{
+
+        height:95px;
+
+        font-size:13px;
+
+    }
+
+    .cta-btn{
+
+        height:48px;
+
+        font-size:13px;
+
+    }
+
+}

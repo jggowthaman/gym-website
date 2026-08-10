@@ -1,0 +1,12 @@
+.btn-primary-custom {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  font-weight: 600;
+}
+
+.btn-primary-custom:hover {
+  background: var(--primary-hover);
+}

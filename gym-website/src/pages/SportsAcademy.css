@@ -1,0 +1,4257 @@
+/*=========================================
+GOOGLE FONT
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/*=========================================
+SPORTS HERO
+=========================================*/
+
+.sports-hero{
+
+    width:100%;
+    min-height:100vh;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+
+    background-size:cover;
+    background-position:center right;
+    background-repeat:no-repeat;
+
+}
+
+/*=========================================
+OVERLAY
+=========================================*/
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,.82) 0%,
+        rgba(0,0,0,.72) 28%,
+        rgba(0,0,0,.42) 58%,
+        rgba(0,0,0,.08) 100%
+    );
+
+}
+
+/*=========================================
+CONTAINER
+=========================================*/
+
+.hero-container{
+
+    width:min(1400px,92%);
+
+    margin:auto;
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:48% 52%;
+
+    align-items:center;
+
+    min-height:100vh;
+
+}
+
+/*=========================================
+LEFT
+=========================================*/
+
+.hero-left{
+
+    max-width:650px;
+
+    color:#fff;
+
+}
+
+/*=========================================
+BADGE
+=========================================*/
+
+.hero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 24px;
+
+    border-radius:50px;
+
+    border:1px solid rgba(255,255,255,.18);
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(14px);
+
+    font-family:'Inter',sans-serif;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+/*=========================================
+TITLE
+=========================================*/
+
+.hero-left h1{
+
+    margin-top:28px;
+
+    font-family:'Barlow Condensed',sans-serif;
+
+    font-size:clamp(4rem,7vw,6.3rem);
+
+    line-height:.95;
+
+    font-weight:800;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+.hero-left h1 span{
+
+    color:#cf102d;
+
+}
+
+/*=========================================
+DESCRIPTION
+=========================================*/
+
+.hero-left p{
+
+    margin-top:26px;
+
+    max-width:560px;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    color:#f2f2f2;
+
+}
+
+/*=========================================
+BUTTONS
+=========================================*/
+
+.hero-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-top:40px;
+
+}
+
+.primary-btn{
+
+    height:58px;
+
+    padding:0 34px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#cf102d;
+
+    color:#fff;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 40px rgba(207,16,45,.35);
+
+}
+
+.secondary-btn{
+
+    height:58px;
+
+    padding:0 32px;
+
+    border-radius:50px;
+
+    border:1px solid rgba(255,255,255,.18);
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.secondary-btn:hover{
+
+    background:#fff;
+
+    color:#111;
+
+}
+
+/*=========================================
+RIGHT
+=========================================*/
+
+.hero-right{
+
+    width:100%;
+
+    height:100%;
+
+}
+/*=========================================
+HERO STATS
+=========================================*/
+
+.hero-stats{
+
+    margin-top:55px;
+
+    width:min(560px,100%);
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+}
+
+.stat{
+
+    padding:24px 10px;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+.stat:not(:last-child)::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:0;
+    top:25%;
+
+    width:1px;
+    height:50%;
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.stat h2{
+
+    font-family:'Barlow Condensed',sans-serif;
+
+    font-size:clamp(2rem,4vw,3rem);
+
+    color:#ffffff;
+
+    margin-bottom:6px;
+
+    line-height:1;
+
+}
+
+.stat span{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:.85rem;
+
+    color:rgba(255,255,255,.82);
+
+    letter-spacing:.5px;
+
+}
+
+/*=========================================
+BACKGROUND DECORATION
+=========================================*/
+
+.sports-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+    height:520px;
+
+    right:-180px;
+    top:-180px;
+
+    border-radius:50%;
+
+    background:rgba(207,16,45,.20);
+
+    filter:blur(130px);
+
+    pointer-events:none;
+
+}
+
+.sports-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+    height:320px;
+
+    left:-120px;
+    bottom:-120px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    filter:blur(120px);
+
+    pointer-events:none;
+
+}
+
+/*=========================================
+BUTTON MICRO ANIMATION
+=========================================*/
+
+.primary-btn svg,
+.secondary-btn svg{
+
+    transition:.35s;
+
+}
+
+.primary-btn:hover svg{
+
+    transform:translateX(6px);
+
+}
+
+.secondary-btn:hover svg{
+
+    transform:scale(1.15);
+
+}
+
+/*=========================================
+BADGE
+=========================================*/
+
+.hero-badge{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero-badge::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-120%;
+
+    top:0;
+
+    width:60%;
+
+    height:100%;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+    transform:skewX(-20deg);
+
+}
+
+.hero-badge:hover::before{
+
+    animation:badgeShine 1s linear;
+
+}
+
+@keyframes badgeShine{
+
+    to{
+
+        left:170%;
+
+    }
+
+}
+
+/*=========================================
+TEXT ANIMATION
+=========================================*/
+
+.hero-left{
+
+    animation:heroFade .9s ease;
+
+}
+
+@keyframes heroFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+SCROLL INDICATOR
+=========================================*/
+
+.hero-scroll{
+
+    position:absolute;
+
+    bottom:35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+
+    z-index:3;
+
+}
+
+.hero-scroll span{
+
+    font-size:12px;
+
+    color:#ffffff;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.scroll-mouse{
+
+    width:28px;
+
+    height:48px;
+
+    border:2px solid rgba(255,255,255,.45);
+
+    border-radius:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.scroll-mouse::before{
+
+    content:"";
+
+    width:5px;
+
+    height:9px;
+
+    margin-top:8px;
+
+    border-radius:20px;
+
+    background:#cf102d;
+
+    animation:scrollWheel 1.8s infinite;
+
+}
+
+@keyframes scrollWheel{
+
+    0%{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translateY(18px);
+
+    }
+
+}
+/*=========================================
+XXL DESKTOP (1600px+)
+=========================================*/
+
+@media (min-width:1600px){
+
+.hero-container{
+
+    width:min(1550px,90%);
+
+}
+
+.hero-left{
+
+    max-width:720px;
+
+}
+
+.hero-left h1{
+
+    font-size:7rem;
+
+}
+
+.hero-left p{
+
+    max-width:620px;
+
+    font-size:1.15rem;
+
+}
+
+.hero-stats{
+
+    width:620px;
+
+}
+
+}
+
+/*=========================================
+LAPTOP (1400px)
+=========================================*/
+
+@media (max-width:1400px){
+
+.hero-container{
+
+    width:92%;
+
+    grid-template-columns:50% 50%;
+
+}
+
+.hero-left{
+
+    max-width:600px;
+
+}
+
+.hero-left h1{
+
+    font-size:clamp(3.8rem,6vw,5.6rem);
+
+}
+
+.hero-left p{
+
+    font-size:1rem;
+
+}
+
+}
+
+/*=========================================
+SMALL LAPTOP
+=========================================*/
+
+@media (max-width:1200px){
+
+.hero-container{
+
+    grid-template-columns:55% 45%;
+
+}
+
+.hero-left h1{
+
+    font-size:4.3rem;
+
+}
+
+.hero-left p{
+
+    max-width:500px;
+
+}
+
+.hero-buttons{
+
+    gap:14px;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    height:54px;
+
+    padding:0 28px;
+
+}
+
+}
+
+/*=========================================
+TABLET LANDSCAPE
+=========================================*/
+
+@media (max-width:992px){
+
+.sports-hero{
+
+    min-height:850px;
+
+    background-position:68% center;
+
+}
+
+.hero-container{
+
+    grid-template-columns:1fr;
+
+    justify-items:center;
+
+    text-align:center;
+
+    padding:110px 0 70px;
+
+    min-height:auto;
+
+}
+
+.hero-left{
+
+    max-width:700px;
+    margin: 0px;
+
+}
+
+.hero-badge{
+
+    margin:auto;
+
+}
+
+.hero-left p{
+
+    margin-inline:auto;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-stats{
+
+    margin-inline:auto;
+
+}
+
+.hero-right{
+
+    display:none;
+
+}
+
+}
+
+/*=========================================
+TABLET
+=========================================*/
+
+@media (max-width:768px){
+
+.sports-hero{
+
+    min-height:760px;
+
+    background-position:72% center;
+
+}
+
+.hero-container{
+
+    width:92%;
+
+    padding:90px 0 50px;
+
+}
+
+.hero-left h1{
+
+    font-size:3.4rem;
+
+    line-height:.95;
+
+}
+
+.hero-left p{
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    width:100%;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+.hero-stats{
+
+    width:100%;
+
+}
+
+.stat{
+
+    padding:18px 8px;
+
+}
+
+.stat h2{
+
+    font-size:2rem;
+
+}
+
+}
+
+/*=========================================
+MOBILE LARGE
+=========================================*/
+
+@media (max-width:576px){
+
+.sports-hero{
+
+    min-height:720px;
+
+    background-position:76% center;
+
+}
+
+.hero-container{
+
+    width:92%;
+
+}
+
+.hero-badge{
+
+    padding:8px 18px;
+
+    font-size:.70rem;
+
+    letter-spacing:1px;
+
+}
+
+.hero-left h1{
+
+    font-size:2.8rem;
+
+}
+
+.hero-left p{
+
+    font-size:.90rem;
+
+    margin-top:20px;
+
+}
+
+.hero-buttons{
+
+    margin-top:30px;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    height:50px;
+
+    font-size:14px;
+
+}
+
+.hero-stats{
+
+    margin-top:35px;
+
+    border-radius:18px;
+
+}
+
+.stat h2{
+
+    font-size:1.8rem;
+
+}
+
+.stat span{
+
+    font-size:.75rem;
+
+}
+
+.hero-scroll{
+
+    display:none;
+
+}
+
+}
+
+/*=========================================
+MOBILE
+=========================================*/
+
+@media (max-width:480px){
+
+.sports-hero{
+
+    min-height: 500px;
+
+    background-position:78% center;
+
+}
+
+.hero-container{
+
+    width:90%;
+    padding: 30px 0 18px;   
+
+}
+
+.hero-left h1{
+
+    font-size:2.4rem;
+
+}
+
+.hero-left p{
+
+    font-size:.85rem;
+
+    line-height:1.7;
+
+}
+
+.hero-buttons{
+
+    gap:12px;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    height:48px;
+
+    font-size:13px;
+
+}
+
+.hero-stats{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.stat{
+
+    padding:15px 5px;
+
+}
+
+.stat h2{
+
+    font-size:1.5rem;
+
+}
+
+.stat span{
+
+    font-size:.70rem;
+
+}
+
+}
+
+/*=========================================
+SMALL MOBILE
+=========================================*/
+
+@media (max-width:375px){
+
+.hero-left h1{
+
+    font-size:2.1rem;
+
+}
+
+.hero-left p{
+
+    font-size:.82rem;
+
+}
+
+.hero-badge{
+
+    font-size:.65rem;
+
+    padding:8px 16px;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    height:46px;
+
+}
+
+.stat h2{
+
+    font-size:1.35rem;
+
+}
+
+}
+
+/*=========================================
+320px DEVICES
+=========================================*/
+
+@media (max-width:320px){
+
+.hero-container{
+
+    width:92%;
+
+}
+
+.hero-left h1{
+
+    font-size:1.9rem;
+
+}
+
+.hero-left p{
+
+    font-size:.78rem;
+
+}
+
+.hero-badge{
+
+    font-size:.60rem;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    height:44px;
+
+    font-size:12px;
+
+}
+
+.stat{
+
+    padding:12px 4px;
+
+}
+
+.stat h2{
+
+    font-size:1.2rem;
+
+}
+
+.stat span{
+
+    font-size:.65rem;
+
+}
+
+}
+
+/*=========================================
+SPORTS PROGRAMS
+=========================================*/
+
+.sports-programs{
+
+    width:100%;
+    padding:110px 0;
+
+    background:#f7f8fa;
+
+    overflow:hidden;
+
+}
+
+.sports-heading{
+
+    width:min(700px,92%);
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.sports-heading span{
+
+    display:inline-block;
+
+    color:#cf102d;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.sports-heading h2{
+
+    margin:18px 0;
+
+    font-family:"Barlow Condensed",sans-serif;
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+    color:#111;
+
+    line-height:1.1;
+
+}
+
+.sports-heading h2 span{
+
+    color:#cf102d;
+
+}
+
+.sports-heading p{
+
+    max-width:620px;
+
+    margin:auto;
+
+    color:#666;
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+
+/*=========================================
+GRID
+=========================================*/
+
+.sports-grid{
+
+    width:min(1350px,92%);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:32px;
+
+}
+
+/*=========================================
+CARD
+=========================================*/
+
+.sport-card{
+
+    background:#fff;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-height:510px;
+
+    transition:.45s;
+
+    border:1px solid #ececec;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.06);
+
+}
+
+.sport-card:hover{
+
+    transform:translateY(-14px);
+
+    border-color:#cf102d;
+
+    box-shadow:0 35px 70px rgba(0,0,0,.12);
+
+}
+
+/*=========================================
+IMAGE
+=========================================*/
+
+.sport-image{
+
+    height:250px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    padding:20px;
+
+    background:linear-gradient(180deg,#fafafa,#ffffff);
+
+}
+
+.sport-image img{
+
+    max-width: 100%;
+    object-fit: contain;
+    transition: .45s;
+    height: 337px;
+    margin: -50px 0px;
+
+}
+
+.sport-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*=========================================
+INDIVIDUAL PNG FIX
+=========================================*/
+
+.cricket img{
+
+    max-height:175px;
+
+}
+
+.archery img{
+
+    max-height:205px;
+
+}
+
+.silambam img{
+
+    max-height:200px;
+
+}
+
+.karate img{
+
+    max-height:190px;
+
+}
+
+.athletics img{
+
+    max-height:182px;
+
+}
+
+.badminton img{
+
+    max-height:210px;
+
+}
+
+/*=========================================
+CONTENT
+=========================================*/
+
+.sport-info{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:28px;
+
+}
+
+.sport-info h3{
+
+    font-family:"Barlow Condensed",sans-serif;
+
+    font-size:2rem;
+
+    color:#111;
+
+}
+
+.sport-info p{
+
+    margin-top:14px;
+
+    color:#666;
+
+    line-height:1.8;
+
+    font-size:.95rem;
+
+}
+
+/*=========================================
+BUTTON
+=========================================*/
+
+.sport-info button{
+
+    margin-top:auto;
+
+    width:170px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#cf102d;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    font-weight:600;
+
+}
+
+.sport-info button:hover{
+
+    background:#111;
+
+    transform:translateY(-3px);
+
+}
+
+/*=========================================
+RESPONSIVE
+=========================================*/
+
+@media(max-width:1200px){
+
+.sports-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.sports-programs{
+
+    padding:80px 0;
+
+}
+
+.sports-grid{
+
+    grid-template-columns:1fr;
+
+    gap:24px;
+
+}
+
+.sport-card{
+
+    min-height:unset;
+
+}
+
+.sport-image{
+
+    height:220px;
+
+}
+
+.sport-info{
+
+    padding:24px;
+
+}
+
+.sport-info h3{
+
+    font-size:1.7rem;
+
+}
+
+.sport-info button{
+
+    width:100%;
+
+    margin-top:24px;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.sports-grid{
+
+    gap:18px;
+
+}
+
+.sport-card{
+
+    border-radius:22px;
+
+}
+
+.sport-image{
+
+    height:155px;
+    padding:8px 12px 0;
+
+}
+
+.sport-info{
+
+    padding:18px;
+
+}
+
+.sport-info h3{
+
+    font-size:1.8rem;
+
+    margin-bottom:8px;
+
+}
+
+.sport-info p{
+
+    font-size:.85rem;
+
+    line-height:1.6;
+
+    margin-top:6px;
+    margin-bottom:18px;
+
+}
+
+.sport-info button{
+
+    width:100%;
+    height:46px;
+
+    font-size:14px;
+
+    border-radius:30px;
+
+}
+
+}
+/*=========================================
+ACADEMY ABOUT
+=========================================*/
+
+.academy-about{
+
+    width:100%;
+    padding:40px 0;
+    background:#ffffff;
+    position:relative;
+    overflow:hidden;
+
+}
+
+/*=========================================
+BACKGROUND DECORATION
+=========================================*/
+
+.academy-about::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+    height:520px;
+
+    background:rgba(207,16,45,.05);
+
+    border-radius:50%;
+
+    top:-220px;
+    right:-220px;
+
+    filter:blur(120px);
+
+}
+
+.academy-about::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+    height:420px;
+
+    background:rgba(207,16,45,.04);
+
+    border-radius:50%;
+
+    left:-180px;
+    bottom:-180px;
+
+    filter:blur(120px);
+
+}
+
+/*=========================================
+WRAPPER
+=========================================*/
+
+.academy-wrapper{
+
+    width:min(1380px,92%);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:58% 42%;
+
+    gap:70px;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*=========================================
+CONTENT
+=========================================*/
+
+.academy-content{
+
+    max-width:720px;
+
+}
+
+.academy-content>span{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 22px;
+
+    background:#cf102d;
+
+    color:#fff;
+
+    border-radius:50px;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:28px;
+
+}
+
+.academy-content h2{
+
+    font-family:"Barlow Condensed",sans-serif;
+
+    font-size:clamp(3rem,5vw,4.7rem);
+
+    line-height:1.05;
+
+    color:#111;
+
+}
+
+.academy-content h2 strong{
+
+    color:#cf102d;
+
+    font-weight:800;
+
+}
+
+.academy-content>p{
+
+    margin-top:28px;
+
+    max-width:620px;
+
+    color:#666;
+
+    font-size:1rem;
+
+    line-height:2;
+
+}
+
+/*=========================================
+FEATURE GRID
+=========================================*/
+
+.academy-features{
+
+    margin-top:45px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.academy-features div{
+
+    height:68px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 22px;
+
+    border-radius:18px;
+
+    background:#fafafa;
+
+    border:1px solid #ededed;
+
+    color:#222;
+
+    font-size:.96rem;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.academy-features div:hover{
+
+    background:#cf102d;
+
+    color:#fff;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 40px rgba(207,16,45,.20);
+
+}
+
+/*=========================================
+BUTTON
+=========================================*/
+
+.academy-content button{
+
+    margin-top:45px;
+
+    width:200px;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#cf102d;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.academy-content button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 45px rgba(207,16,45,.28);
+
+}
+
+/*=========================================
+IMAGE
+=========================================*/
+
+.academy-image{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+.academy-image img{
+
+    width: 94%;
+    /* max-width: 520px; */
+    height: 573px;
+    max-width: 520px;
+    border-radius: 32px;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, .15);
+    margin: -7px 39px;
+
+
+}
+
+/*=========================================
+FLOATING CARD
+=========================================*/
+
+.experience-box{
+
+    position:absolute;
+
+    left:-35px;
+
+    bottom:45px;
+
+    width:180px;
+
+    height:180px;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:28px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+    border:1px solid rgba(255,255,255,.6);
+
+}
+
+.experience-box h2{
+
+    font-family:"Barlow Condensed",sans-serif;
+
+    font-size:4rem;
+
+    line-height:1;
+
+    color:#cf102d;
+
+}
+
+.experience-box span{
+
+    margin-top:8px;
+
+    color:#555;
+
+    text-align:center;
+
+    font-size:.95rem;
+
+    line-height:1.5;
+
+}
+/*=========================================
+PREMIUM IMAGE EFFECTS
+=========================================*/
+
+.academy-image{
+
+    overflow:visible;
+
+}
+
+.academy-image img{
+
+    transition:
+    transform .8s ease,
+    box-shadow .5s ease,
+    filter .5s ease;
+
+}
+
+.academy-about:hover .academy-image img{
+
+    transform:scale(1.04);
+
+    filter:brightness(1.03);
+
+    box-shadow:
+    0 45px 90px rgba(0,0,0,.18);
+
+}
+
+/*=========================================
+IMAGE BORDER
+=========================================*/
+
+.academy-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-18px;
+
+    border:2px solid rgba(207,16,45,.08);
+
+    border-radius:42px;
+
+    z-index:-1;
+
+    transition:.5s;
+
+}
+
+.academy-about:hover .academy-image::before{
+
+    inset:-10px;
+
+    border-color:rgba(207,16,45,.18);
+
+}
+
+/*=========================================
+FLOATING EXPERIENCE CARD
+=========================================*/
+
+.experience-box{
+
+    transition:
+    transform .45s ease,
+    box-shadow .45s ease;
+
+    animation:floatCard 4s ease-in-out infinite;
+
+}
+
+.academy-about:hover .experience-box{
+
+    transform:
+    translateY(-12px)
+    rotate(-2deg);
+
+    box-shadow:
+    0 35px 70px rgba(0,0,0,.18);
+
+}
+
+@keyframes floatCard{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+HEADING
+=========================================*/
+
+.academy-content h2{
+
+    position:relative;
+
+}
+
+.academy-content h2 strong{
+
+    position:relative;
+
+}
+
+.academy-content h2 strong::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:100%;
+
+    height:6px;
+
+    border-radius:50px;
+
+    background:#cf102d;
+
+    opacity:.15;
+
+}
+
+/*=========================================
+FEATURE CARDS
+=========================================*/
+
+.academy-features div{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.academy-features div::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-100%;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+    linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.22),
+    transparent
+    );
+
+    transition:.8s;
+
+}
+
+.academy-features div:hover::before{
+
+    left:100%;
+
+}
+
+.academy-features div:hover{
+
+    padding-left:30px;
+
+}
+
+/*=========================================
+BUTTON
+=========================================*/
+
+.academy-content button{
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.academy-content button::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:100%;
+
+    left:0;
+    top:0;
+
+    background:#111;
+
+    transition:.45s;
+
+    z-index:0;
+
+}
+
+.academy-content button span,
+.academy-content button svg{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.academy-content button:hover::before{
+
+    width:100%;
+
+}
+
+.academy-content button:hover svg{
+
+    transform:translateX(6px);
+
+}
+
+.academy-content button svg{
+
+    transition:.35s;
+
+}
+
+/*=========================================
+PARAGRAPH
+=========================================*/
+
+.academy-content p{
+
+    transition:.35s;
+
+}
+
+.academy-about:hover .academy-content p{
+
+    color:#444;
+
+}
+
+/*=========================================
+CONTENT ANIMATION
+=========================================*/
+
+.academy-content{
+
+    animation:aboutFade .9s ease;
+
+}
+
+@keyframes aboutFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+PREMIUM GLOW
+=========================================*/
+
+.academy-about::before{
+
+    animation:glowMove 10s linear infinite alternate;
+
+}
+
+@keyframes glowMove{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-80px);
+
+    }
+
+}
+
+/*=========================================
+SECTION TRANSITION
+=========================================*/
+
+.academy-about{
+
+    border-top:1px solid rgba(0,0,0,.05);
+
+}
+/*=========================================
+ABOUT RESPONSIVE
+=========================================*/
+
+/*==============================
+1400px
+==============================*/
+
+@media (max-width:1400px){
+
+.academy-wrapper{
+
+    width:92%;
+
+    gap:60px;
+
+}
+
+.academy-image img{
+
+    max-width:480px;
+
+    height:620px;
+
+}
+
+}
+
+/*==============================
+1200px
+==============================*/
+
+@media (max-width:1200px){
+
+.academy-wrapper{
+
+    grid-template-columns:55% 45%;
+
+    gap:50px;
+
+}
+
+.academy-content h2{
+
+    font-size:3.5rem;
+
+}
+
+.academy-content p{
+
+    font-size:.95rem;
+
+}
+
+.academy-image img{
+
+    height:560px;
+
+}
+
+.experience-box{
+
+    width:160px;
+
+    height:160px;
+
+}
+
+.experience-box h2{
+
+    font-size:3.3rem;
+
+}
+
+}
+
+/*==============================
+992px
+==============================*/
+
+@media (max-width:992px){
+
+.academy-about{
+
+    padding:90px 0;
+
+}
+
+.academy-wrapper{
+
+    grid-template-columns:1fr;
+
+    gap:60px;
+
+}
+
+.academy-content{
+
+    order:2;
+
+    max-width:100%;
+
+    text-align:center;
+    margin: 46px 0px;
+
+}
+
+.academy-content>p{
+
+    max-width:100%;
+
+    margin-inline:auto;
+
+}
+
+.academy-content>span{
+
+    margin:auto;
+
+}
+
+.academy-features{
+
+    margin-top:35px;
+
+}
+
+.academy-content button{
+
+    margin:40px auto 0;
+
+}
+
+.academy-image{
+
+    order:1;
+
+    justify-content:center;
+
+}
+
+.academy-image img{
+
+    width:100%;
+
+    max-width:600px;
+
+    height:520px;
+
+}
+
+.experience-box{
+
+    left:25px;
+
+    bottom:25px;
+
+}
+
+}
+
+/*==============================
+768px
+==============================*/
+
+@media (max-width:768px){
+
+.academy-about{
+
+    padding:80px 0;
+
+}
+
+.academy-content h2{
+
+    font-size:2.8rem;
+
+    line-height:1.1;
+
+}
+
+.academy-content p{
+
+    font-size:.92rem;
+
+    line-height:1.9;
+
+}
+
+.academy-features{
+
+    grid-template-columns:1fr;
+
+}
+
+.academy-features div{
+
+    height:60px;
+
+    font-size:.92rem;
+
+}
+
+.academy-image img{
+
+    height:460px;
+
+    border-radius:26px;
+
+}
+
+.experience-box{
+
+    width:145px;
+
+    height:145px;
+
+}
+
+.experience-box h2{
+
+    font-size:2.8rem;
+
+}
+
+}
+
+/*==============================
+576px
+==============================*/
+
+@media (max-width:576px){
+
+.academy-content h2{
+
+    font-size:2.3rem;
+
+}
+
+.academy-content p{
+
+    font-size:.88rem;
+
+}
+
+.academy-content button{
+
+    width:100%;
+
+    height:52px;
+
+}
+
+.academy-features{
+
+    gap:14px;
+
+}
+
+.academy-features div{
+
+    padding:0 18px;
+
+    height:58px;
+
+}
+
+.academy-image img{
+
+    height:380px;
+
+}
+
+.experience-box{
+
+    width:130px;
+
+    height:130px;
+
+    bottom:18px;
+
+    left:18px;
+
+}
+
+.experience-box h2{
+
+    font-size:2.4rem;
+
+}
+
+.experience-box span{
+
+    font-size:.82rem;
+
+}
+
+}
+
+/*==============================
+480px
+==============================*/
+
+@media (max-width:480px){
+
+.academy-about{
+
+    padding:0px 0;
+
+}
+
+.academy-wrapper{
+
+    width:90%;
+
+    gap:45px;
+
+}
+
+.academy-content>span{
+
+    padding:8px 18px;
+
+    font-size:.70rem;
+
+}
+
+.academy-content h2{
+
+    font-size:2rem;
+
+}
+
+.academy-content p{
+
+    margin-top:20px;
+
+    font-size:.84rem;
+
+    line-height:1.8;
+
+}
+
+.academy-features div{
+
+    height:54px;
+
+    font-size:.84rem;
+
+    border-radius:14px;
+
+}
+
+.academy-image img{
+
+    height:330px;
+
+    border-radius:22px;
+
+}
+
+.experience-box{
+
+    position:absolute;
+
+    width:110px;
+
+    height:110px;
+
+    left:15px;
+
+    bottom:15px;
+
+    border-radius:20px;
+
+}
+
+.experience-box h2{
+
+    font-size:2rem;
+
+}
+
+.experience-box span{
+
+    font-size:.72rem;
+
+    line-height:1.3;
+
+}
+
+}
+
+/*==============================
+375px
+==============================*/
+
+@media (max-width:375px){
+
+.academy-content h2{
+
+    font-size:1.8rem;
+
+}
+
+.academy-content p{
+
+    font-size:.80rem;
+
+}
+
+.academy-features div{
+
+    height:50px;
+
+    font-size:.80rem;
+
+}
+
+.academy-image img{
+
+    height:300px;
+
+}
+
+.experience-box{
+
+    width:95px;
+
+    height:95px;
+
+}
+
+.experience-box h2{
+
+    font-size:1.7rem;
+
+}
+
+.experience-box span{
+
+    font-size:.65rem;
+
+}
+
+}
+
+/*==============================
+320px
+==============================*/
+
+@media (max-width:320px){
+
+.academy-wrapper{
+
+    width:92%;
+
+}
+
+.academy-content h2{
+
+    font-size:1.65rem;
+
+}
+
+.academy-content p{
+
+    font-size:.76rem;
+
+}
+
+.academy-content button{
+
+    height:48px;
+
+    font-size:13px;
+
+}
+
+.academy-features div{
+
+    height:46px;
+
+    font-size:.74rem;
+
+    padding:0 14px;
+
+}
+
+.academy-image img{
+
+    height:260px;
+
+}
+
+.experience-box{
+
+    width:85px;
+
+    height:85px;
+
+}
+
+.experience-box h2{
+
+    font-size:1.5rem;
+
+}
+
+.experience-box span{
+
+    font-size:.58rem;
+
+}
+
+}
+.sport-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.sport-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+    135deg,
+    transparent,
+    rgba(207,16,45,.05),
+    transparent);
+
+    opacity:0;
+
+    transition:.5s;
+
+}
+
+.sport-card:hover::before{
+
+    opacity:1;
+
+}
+
+.sport-card:hover{
+
+    transform:
+    translateY(-12px)
+    scale(1.02);
+
+}
+.sport-image img{
+
+    animation:floatImage 5s ease-in-out infinite;
+
+}
+
+@keyframes floatImage{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+.sport-info button{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.sport-info button::before{
+
+content:"";
+
+position:absolute;
+
+left:-100%;
+
+top:0;
+
+width:100%;
+height:100%;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.4),
+
+transparent);
+
+transition:.7s;
+
+}
+
+.sport-info button:hover::before{
+
+left:100%;
+
+}
+.sport-image{
+
+overflow:hidden;
+
+}
+
+.sport-card:hover img{
+
+transform:
+
+scale(1.08)
+
+rotate(-2deg);
+
+}
+.sport-card{
+
+border:1px solid #eee;
+
+}
+
+.sport-card:hover{
+
+border-color:#cf102d;
+
+}
+/*=========================================
+SPORTS ADMISSION SECTION
+=========================================*/
+
+.sports-admission{
+    padding:100px 7%;
+    background:linear-gradient(180deg,#f8f9fc 0%,#ffffff 100%);
+    position:relative;
+    overflow:hidden;
+}
+
+.sports-admission::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:rgba(220,20,60,.06);
+    border-radius:50%;
+    top:-180px;
+    right:-120px;
+}
+
+.sports-admission::after{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:rgba(13,110,253,.05);
+    border-radius:50%;
+    bottom:-150px;
+    left:-120px;
+}
+
+.admission-title{
+    text-align:center;
+    margin-bottom:70px;
+    position:relative;
+    z-index:2;
+}
+
+.admission-title span{
+    display:inline-block;
+    background:#dc143c;
+    color:#fff;
+    padding:10px 22px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.admission-title h2{
+    margin-top:25px;
+    font-size:52px;
+    font-weight:800;
+    color:#111827;
+    line-height:1.2;
+}
+
+.admission-title h2 span{
+    background:none;
+    color:#dc143c;
+    padding:0;
+    border-radius:0;
+}
+
+.admission-title p{
+    width:700px;
+    max-width:100%;
+    margin:20px auto 0;
+    color:#6b7280;
+    font-size:17px;
+    line-height:1.8;
+}
+
+.admission-container{
+    display:grid;
+    grid-template-columns:1.8fr 1fr;
+    gap:40px;
+    align-items:flex-start;
+    position:relative;
+    z-index:2;
+}
+
+/*=========================================
+LEFT FORM
+=========================================*/
+
+.registration-form{
+    background:#fff;
+    border-radius:24px;
+    padding:45px;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+    border:1px solid #ececec;
+}
+
+.form-header{
+    margin-bottom:35px;
+    padding-bottom:20px;
+    border-bottom:1px solid #eee;
+}
+
+.form-header h3{
+    font-size:32px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:8px;
+}
+
+.form-header p{
+    color:#6b7280;
+    font-size:15px;
+}
+
+.photo-upload{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin-bottom:35px;
+}
+
+.photo-box{
+    width:120px;
+    height:120px;
+    border-radius:18px;
+    border:2px dashed #d1d5db;
+    overflow:hidden;
+    background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.photo-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.photo-upload input[type=file]{
+    flex:1;
+    border:2px dashed #d1d5db;
+    padding:18px;
+    border-radius:14px;
+    cursor:pointer;
+    background:#fafafa;
+    transition:.3s;
+}
+
+.photo-upload input[type=file]:hover{
+    border-color:#dc143c;
+    background:#fff5f7;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+    margin-bottom:22px;
+}
+
+.sa-form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.sa-form-group label{
+    margin-bottom:10px;
+    font-weight:600;
+    color:#1f2937;
+    font-size:15px;
+}
+
+.sa-form-group label span{
+    color:#dc143c;
+}
+
+.sa-form-group input,
+.sa-form-group select,
+.sa-form-group textarea{
+    width:100%;
+    padding:15px 18px;
+    border:1px solid #d9d9d9;
+    border-radius:14px;
+    background:#fff;
+    font-size:15px;
+    transition:.3s;
+    outline:none;
+}
+
+.sa-form-group input:focus,
+.sa-form-group select:focus,
+.sa-form-group textarea:focus{
+    border-color:#dc143c;
+    box-shadow:0 0 0 4px rgba(220,20,60,.08);
+}
+
+.sa-form-group textarea{
+    resize:none;
+    min-height:130px;
+}
+
+.error{
+    color:#dc143c;
+    font-size:13px;
+    margin-top:7px;
+    font-weight:600;
+}
+/*=========================================
+RIGHT SIDE FEE CARD
+=========================================*/
+
+.fee-card{
+    background:#ffffff;
+    border-radius:24px;
+    padding:35px;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+    border:1px solid #ececec;
+    position:sticky;
+    top:110px;
+    transition:.35s ease;
+    height:auto;
+    min-height:auto;
+}
+
+.fee-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 25px 70px rgba(0,0,0,.12);
+}
+
+.fee-header{
+    text-align:center;
+    margin-bottom:30px;
+    padding-bottom:22px;
+    border-bottom:1px solid #ececec;
+}
+
+.fee-header h3{
+    font-size:30px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:8px;
+}
+
+.fee-header p{
+    color:#6b7280;
+    font-size:15px;
+}
+
+.payment-details{
+    margin-bottom:35px;
+}
+
+.payment-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 0;
+    border-bottom:1px dashed #e4e4e4;
+}
+
+.payment-item span{
+    color:#374151;
+    font-weight:600;
+    font-size:15px;
+}
+
+.payment-item strong{
+    color:#dc143c;
+    font-size:17px;
+    font-weight:700;
+}
+
+.payment-item.total{
+    margin-top:18px;
+    padding:18px;
+    border-radius:14px;
+    background:linear-gradient(135deg,#dc143c,#ff3d68);
+    border:none;
+}
+
+.payment-item.total span,
+.payment-item.total strong{
+    color:#fff;
+}
+
+.fee-title{
+    font-size:22px;
+    color:#111827;
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+.fee-list{
+    margin-bottom:35px;
+}
+
+.fee-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 18px;
+    margin-bottom:12px;
+    background:#f9fafb;
+    border-radius:14px;
+    transition:.3s;
+}
+
+.fee-row:hover{
+    background:#dc143c;
+    transform:translateX(5px);
+}
+
+.fee-row:hover span,
+.fee-row:hover strong{
+    color:#fff;
+}
+
+.fee-row span{
+    color:#374151;
+    font-weight:600;
+}
+
+.fee-row strong{
+    color:#dc143c;
+    font-weight:700;
+}
+
+.important-note{
+    margin-top:35px;
+    padding:25px;
+    border-radius:18px;
+    background:#fff8ea;
+    border-left:5px solid #f59e0b;
+}
+
+.important-note h4{
+    color:#111827;
+    margin-bottom:15px;
+    font-size:21px;
+    font-weight:700;
+}
+
+.important-note ul{
+    padding-left:18px;
+}
+
+.important-note li{
+    margin-bottom:12px;
+    color:#4b5563;
+    line-height:1.7;
+    font-size:15px;
+}
+
+.register-btn{
+    width:100%;
+    height:58px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(135deg,#dc143c,#ff3d68);
+    color:#fff;
+    font-size:17px;
+    font-weight:700;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    cursor:pointer;
+    transition:.35s ease;
+    margin-top:30px;
+}
+
+.register-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 40px rgba(220,20,60,.35);
+}
+
+.register-btn svg{
+    transition:.3s;
+}
+
+.register-btn:hover svg{
+    transform:translateX(6px);
+}
+/*=========================================
+ACADEMY VALUES
+=========================================*/
+
+.academy-values-bottom{
+    padding:100px 7%;
+    background:linear-gradient(180deg,#ffffff 0%,#f8f9fc 100%);
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.academy-values-bottom .value-card{
+    background:#fff;
+    padding:45px 35px;
+    border-radius:24px;
+    text-align:center;
+    border:1px solid #ececec;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:.35s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.academy-values-bottom .value-card::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    background:rgba(220,20,60,.05);
+    border-radius:50%;
+    top:-90px;
+    right:-90px;
+}
+
+.academy-values-bottom .value-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+}
+
+.academy-values-bottom .value-card span{
+    width:70px;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    border-radius:50%;
+    background:linear-gradient(135deg,#dc143c,#ff3d68);
+    color:#fff;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.academy-values-bottom .value-card h3{
+    font-size:28px;
+    color:#111827;
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+.academy-values-bottom .value-card p{
+    color:#6b7280;
+    line-height:1.8;
+    font-size:15px;
+}
+
+/*=========================================
+SMOOTH ANIMATION
+=========================================*/
+
+.registration-form,
+.fee-card,
+.value-card{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#dc143c;
+    border-radius:50px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+/*=========================================
+LARGE SCREEN
+=========================================*/
+
+@media(max-width:1200px){
+
+.admission-container{
+    grid-template-columns:1.5fr 1fr;
+    gap:30px;
+}
+
+.registration-form{
+    padding:35px;
+}
+
+.fee-card{
+    padding:28px;
+}
+
+.admission-title h2{
+    font-size:44px;
+}
+
+}
+
+/*=========================================
+TABLET
+=========================================*/
+
+@media(max-width:992px){
+
+.admission-container{
+    grid-template-columns:1fr;
+}
+
+.fee-card{
+    position:static;
+}
+
+.academy-values-bottom{
+    grid-template-columns:1fr;
+}
+
+.form-row{
+    grid-template-columns:1fr;
+}
+
+.registration-form{
+    padding:30px;
+}
+
+.photo-upload{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.photo-box{
+    width:130px;
+    height:130px;
+}
+
+}
+
+/*=========================================
+MOBILE
+=========================================*/
+
+@media(max-width:768px){
+
+.sports-admission{
+    padding:70px 20px;
+}
+
+.admission-title h2{
+    font-size:34px;
+}
+
+.admission-title p{
+    font-size:15px;
+}
+
+.registration-form{
+    padding:22px;
+    border-radius:18px;
+}
+
+.fee-card{
+    padding:22px;
+    border-radius:18px;
+}
+
+.form-header h3{
+    font-size:24px;
+}
+
+.fee-header h3{
+    font-size:24px;
+}
+
+.register-btn{
+    height:52px;
+    font-size:15px;
+}
+
+.academy-values-bottom{
+    padding:70px 20px;
+}
+
+.academy-values-bottom .value-card{
+    padding:30px 22px;
+}
+
+.academy-values-bottom .value-card h3{
+    font-size:22px;
+}
+
+}
+
+/*=========================================
+SMALL MOBILE
+=========================================*/
+
+@media(max-width:480px){
+
+.admission-title span{
+    font-size:11px;
+    padding:8px 18px;
+}
+
+.admission-title h2{
+    font-size:28px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    font-size:14px;
+    padding:13px 15px;
+}
+
+.photo-box{
+    width:110px;
+    height:110px;
+}
+
+.payment-item{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:6px;
+}
+
+.fee-row{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:6px;
+}
+
+.register-btn{
+    font-size:14px;
+}
+
+}
+
+/*=========================================
+320px DEVICES
+=========================================*/
+
+@media(max-width:360px){
+
+.sports-admission{
+    padding:60px 15px;
+}
+
+.registration-form,
+.fee-card{
+    padding:18px;
+}
+
+.admission-title h2{
+    font-size:24px;
+}
+
+.form-header h3,
+.fee-header h3{
+    font-size:21px;
+}
+
+.academy-values-bottom{
+    padding:60px 15px;
+}
+
+.academy-values-bottom .value-card{
+    padding:25px 18px;
+}
+
+.academy-values-bottom .value-card span{
+    width:60px;
+    height:60px;
+    font-size:20px;
+}
+
+}
+/*=========================================
+PREMIUM INPUT EFFECTS
+=========================================*/
+
+.form-group{
+    position:relative;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    transition:.35s ease;
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover{
+    border-color:#dc143c;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    transform:translateY(-2px);
+}
+
+/*=========================================
+CARD HOVER
+=========================================*/
+
+.registration-form,
+.fee-card{
+    transition:.4s ease;
+}
+
+.registration-form:hover,
+.fee-card:hover{
+    transform:translateY(-8px);
+}
+
+/*=========================================
+PHOTO
+=========================================*/
+
+.photo-box{
+    position:relative;
+}
+
+.photo-box::after{
+    content:"Upload Photo";
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.45);
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+    font-size:13px;
+    font-weight:600;
+}
+
+.photo-box:hover::after{
+    opacity:1;
+}
+
+/*=========================================
+BUTTON RIPPLE
+=========================================*/
+
+.register-btn{
+    overflow:hidden;
+    position:relative;
+}
+
+.register-btn::before{
+    content:"";
+    position:absolute;
+    width:0;
+    height:0;
+    border-radius:50%;
+    background:rgba(255,255,255,.25);
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    transition:.45s;
+}
+
+.register-btn:hover::before{
+    width:420px;
+    height:420px;
+}
+
+/*=========================================
+NOTE
+=========================================*/
+
+.important-note li::marker{
+    color:#dc143c;
+}
+
+.important-note li{
+    padding-left:5px;
+}
+
+/*=========================================
+PAYMENT
+=========================================*/
+
+.payment-item strong{
+    letter-spacing:.5px;
+}
+
+.payment-item.total{
+    box-shadow:0 12px 30px rgba(220,20,60,.25);
+}
+/*==================================================
+ADMISSION SECTION RESPONSIVE FIX
+PASTE AT THE VERY END OF SportsAcademy.css
+==================================================*/
+
+/* Laptop */
+@media (max-width:1200px){
+
+.admission-container{
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+.registration-form,
+.fee-card{
+    width:100%;
+}
+
+.fee-card{
+    position:static;
+    height:auto !important;
+}
+
+}
+
+/* Tablet */
+@media (max-width:992px){
+
+.sports-admission{
+    padding:80px 30px;
+}
+
+.registration-form{
+    padding:35px 25px;
+}
+
+.fee-card{
+    padding:30px 25px;
+}
+
+.form-row{
+    grid-template-columns:1fr;
+    gap:18px;
+}
+
+.photo-upload{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.photo-box{
+    width:130px;
+    height:130px;
+}
+
+.admission-title h2{
+    font-size:42px;
+}
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+.sports-admission{
+    padding:60px 20px;
+}
+
+.admission-title{
+    margin-bottom:40px;
+}
+
+.admission-title h2{
+    font-size:32px;
+    line-height:1.2;
+}
+
+.admission-title p{
+    font-size:15px;
+}
+
+.registration-form{
+    padding:20px;
+    border-radius:18px;
+}
+
+.fee-card{
+    padding:20px;
+    border-radius:18px;
+    margin-top:25px;
+}
+
+.form-header h3{
+    font-size:24px;
+}
+
+.form-header p{
+    font-size:14px;
+}
+
+.photo-box{
+    width:110px;
+    height:110px;
+}
+
+.photo-upload input{
+    width:100%;
+}
+
+.sa-form-group label{
+    font-size:14px;
+}
+
+.sa-form-group input,
+.sa-form-group select,
+.sa-form-group textarea{
+    padding:13px 15px;
+    font-size:14px;
+}
+
+.sa-form-group textarea{
+    min-height:110px;
+}
+
+.register-btn{
+    height:50px;
+    font-size:15px;
+}
+
+.fee-title{
+    font-size:22px;
+}
+
+.fee-row{
+    padding:14px;
+}
+
+.important-note{
+    padding:18px;
+}
+
+.important-note h4{
+    font-size:18px;
+}
+
+.important-note li{
+    font-size:14px;
+}
+
+}
+
+/* Small Mobile */
+@media (max-width:480px){
+
+.sports-admission{
+    padding:45px 15px;
+}
+
+.admission-title span{
+    font-size:11px;
+    padding:8px 16px;
+}
+
+.admission-title h2{
+    font-size:26px;
+}
+
+.admission-title p{
+    font-size:14px;
+}
+
+.registration-form,
+.fee-card{
+    padding:16px;
+    border-radius:16px;
+}
+
+.form-header{
+    margin-bottom:20px;
+}
+
+.form-header h3{
+    font-size:20px;
+}
+
+.photo-box{
+    width:90px;
+    height:90px;
+}
+
+.form-row{
+    gap:15px;
+}
+
+.sa-form-group input,
+.sa-form-group select,
+.sa-form-group textarea{
+    font-size:13px;
+    padding:12px;
+}
+
+.register-btn{
+    height:48px;
+    font-size:14px;
+}
+
+.fee-title{
+    font-size:20px;
+}
+
+.fee-row{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:5px;
+}
+
+.important-note{
+    padding:15px;
+}
+
+.important-note li{
+    font-size:13px;
+    line-height:1.6;
+}
+
+}
+
+/* 320px */
+@media (max-width:320px){
+
+.sports-admission{
+    padding:35px 12px;
+}
+
+.admission-title h2{
+    font-size:22px;
+}
+
+.registration-form,
+.fee-card{
+    padding:14px;
+}
+
+.photo-box{
+    width:80px;
+    height:80px;
+}
+
+.form-header h3{
+    font-size:18px;
+}
+
+.sa-form-group input,
+.sa-form-group select,
+.sa-form-group textarea{
+    padding:10px;
+    font-size:12px;
+}
+
+.register-btn{
+    height:45px;
+    font-size:13px;
+}
+
+.fee-title{
+    font-size:18px;
+}
+
+.important-note h4{
+    font-size:16px;
+}
+
+.important-note li{
+    font-size:12px;
+}
+
+}
+
+/*=========================================
+ACADEMY LOCATION
+=========================================*/
+
+.academy-location{
+
+    width:100%;
+
+    padding:70px 7%;
+
+    background:#111;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.academy-location::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:rgba(207,16,45,.15);
+
+    filter:blur(100px);
+
+    top:-180px;
+
+    right:-100px;
+
+}
+
+.academy-location::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    filter:blur(100px);
+
+    bottom:-150px;
+
+    left:-100px;
+
+}
+
+.location-container{
+
+    width:min(1250px,100%);
+
+    margin:auto;
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+    padding:35px 40px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(15px);
+
+}
+
+.location-icon{
+
+    width:65px;
+
+    height:65px;
+
+    min-width:65px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#cf102d;
+
+    color:#fff;
+
+    font-size:25px;
+
+    box-shadow:0 12px 30px rgba(207,16,45,.3);
+
+}
+
+.location-content{
+
+    flex:1;
+
+}
+
+.location-tag{
+
+    display:block;
+
+    color:#cf102d;
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:7px;
+
+}
+
+.location-content h2{
+
+    margin:0;
+
+    color:#fff;
+
+    font-family:"Barlow Condensed",sans-serif;
+
+    font-size:2.2rem;
+
+    line-height:1;
+
+}
+
+.location-content h2 span{
+
+    color:#cf102d;
+
+}
+
+.location-content p{
+
+    margin:10px 0 0;
+
+    color:rgba(255,255,255,.72);
+
+    font-family:"Inter",sans-serif;
+
+    font-size:.95rem;
+
+    line-height:1.6;
+
+}
+
+.location-btn{
+
+    height:52px;
+
+    padding:0 25px;
+
+    border-radius:50px;
+
+    background:#cf102d;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    white-space:nowrap;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.35s ease;
+
+}
+
+.location-btn:hover{
+
+    background:#fff;
+
+    color:#111;
+
+    transform:translateY(-3px);
+
+}
+
+
+/*=========================================
+LOCATION RESPONSIVE
+=========================================*/
+
+@media(max-width:768px){
+
+    .academy-location{
+
+        padding:55px 20px;
+
+    }
+
+    .location-container{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:30px 22px;
+
+        gap:18px;
+
+    }
+
+    .location-icon{
+
+        width:58px;
+
+        height:58px;
+
+        min-width:58px;
+
+        font-size:22px;
+
+    }
+
+    .location-content h2{
+
+        font-size:2rem;
+
+    }
+
+    .location-content p{
+
+        font-size:.88rem;
+
+        line-height:1.7;
+
+    }
+
+    .location-btn{
+
+        width:100%;
+
+        height:50px;
+
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    .academy-location{
+
+        padding:45px 15px;
+
+    }
+
+    .location-container{
+
+        padding:25px 18px;
+
+        border-radius:20px;
+
+    }
+
+    .location-content h2{
+
+        font-size:1.7rem;
+
+    }
+
+    .location-content p{
+
+        font-size:.82rem;
+
+    }
+
+    .location-tag{
+
+        font-size:.65rem;
+
+        letter-spacing:1.5px;
+
+    }
+
+}

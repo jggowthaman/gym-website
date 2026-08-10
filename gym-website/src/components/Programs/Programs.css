@@ -1,0 +1,981 @@
+/*=========================================
+ PROGRAMS SECTION
+=========================================*/
+
+.programs{
+
+    z-index:-1;
+    width:100%;
+    padding:110px 0;
+    background:#ffffff;
+    position:relative;
+    overflow:hidden;
+    top: -33px;
+    left: 49px;
+
+}
+
+/*=========================================
+ BACKGROUND GLOW
+=========================================*/
+
+.programs::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    left:-180px;
+
+    top:-120px;
+
+    border-radius:50%;
+
+    background:rgba(207,16,45,.05);
+
+    filter:blur(120px);
+
+}
+
+.programs::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    right:-150px;
+
+    bottom:-120px;
+
+    border-radius:50%;
+
+    background:rgba(207,16,45,.05);
+
+    filter:blur(120px);
+
+}
+
+/*=========================================
+ CONTAINER
+=========================================*/
+
+.programs-container{
+
+    width:92%;
+
+    max-width:1350px;
+
+    margin:33px 0;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*=========================================
+ SECTION TITLE
+=========================================*/
+
+.section-title{
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:70px;
+
+}
+
+.section-title span{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    background:#cf102d;
+
+    color:#ffffff;
+
+    border:none;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+    box-shadow:
+    0 12px 30px rgba(207,16,45,.18);
+
+}
+
+.section-title h2{
+
+    font-family:"Barlow",sans-serif;
+
+    font-size:54px;
+
+    font-weight:800;
+
+    color:#181818;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.section-title h2 span{
+
+    background:none;
+
+    border:none;
+
+    padding:0;
+
+    color:#cf102d;
+
+    font-size:inherit;
+
+}
+
+.section-title p{
+
+    color:#666666;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+/*=========================================
+ GRID
+=========================================*/
+
+.programs-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+/*=========================================
+ CARD
+=========================================*/
+
+.program-card{
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    border:1px solid #ececec;
+
+    transition:.45s ease;
+
+    position:relative;
+
+    margin:0 0 0 23px;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.program-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#cf102d;
+
+    box-shadow:
+        0 24px 55px rgba(0,0,0,.12);
+
+}
+
+/*=========================================
+ PROGRAM IMAGE
+=========================================*/
+
+.program-image{
+
+    width:100%;
+
+    height:260px;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.program-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        to top,
+
+        rgba(0,0,0,.45),
+
+        rgba(0,0,0,.05)
+
+    );
+
+    z-index:1;
+
+}
+
+.program-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s ease;
+
+}
+
+.program-card:hover .program-image img{
+
+    transform:scale(1.08);
+
+}
+
+/*=========================================
+ CONTENT
+=========================================*/
+
+.program-content{
+
+    position:relative;
+
+    padding:14px 34px;
+
+    margin:33px 1px;
+
+}
+
+/*=========================================
+ ICON
+=========================================*/
+
+.program-icon{
+
+    position:absolute;
+
+    top:-28px;
+
+    left:28px;
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        #cf102d,
+
+        #93061d
+
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#ffffff;
+
+    font-size:24px;
+
+    box-shadow:
+        0 15px 35px rgba(207,16,45,.30);
+
+    transition:.4s;
+
+}
+
+.program-card:hover .program-icon{
+
+    transform:
+        rotate(-10deg)
+        scale(1.08);
+
+}
+
+/*=========================================
+ TITLE
+=========================================*/
+
+.program-content h3{
+
+    margin-top:18px;
+
+    margin-bottom:15px;
+
+    font-family:"Barlow",sans-serif;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#181818;
+
+}
+
+/*=========================================
+ DESCRIPTION
+=========================================*/
+
+.program-content p{
+
+    color:#666666;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    margin-bottom:24px;
+
+}
+/*=========================================
+ BUTTON
+=========================================*/
+
+.program-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:none;
+
+    border:none;
+
+    color:#cf102d;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.program-btn i{
+
+    transition:.35s;
+
+}
+
+.program-card:hover .program-btn{
+
+    color:#181818;
+
+}
+
+.program-card:hover .program-btn i{
+
+    transform:translateX(6px);
+
+}
+
+/*=========================================
+ VIEW ALL BUTTON
+=========================================*/
+
+.programs-button{
+
+    text-align:center;
+
+    margin-top:60px;
+
+}
+
+.programs-button button{
+
+    width:230px;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(
+        135deg,
+        #cf102d,
+        #93061d
+    );
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+    box-shadow:
+        0 15px 35px rgba(207,16,45,.22);
+
+}
+
+.programs-button button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 22px 45px rgba(207,16,45,.28);
+
+}
+
+.programs-button button i{
+
+    transition:.35s;
+
+}
+
+.programs-button button:hover i{
+
+    transform:translateX(6px);
+
+}
+
+/*=========================================
+ PREMIUM CARD HOVER
+=========================================*/
+
+.program-card{
+
+    transition:
+        transform .45s ease,
+        box-shadow .45s ease,
+        border-color .45s ease;
+
+}
+
+.program-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,0),
+        rgba(255,255,255,.08),
+        rgba(207,16,45,.05)
+    );
+
+    opacity:0;
+
+    transition:.45s;
+
+    z-index:1;
+
+    pointer-events:none;
+
+}
+
+.program-card:hover::before{
+
+    opacity:1;
+
+}
+
+.program-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:3px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #cf102d,
+        transparent
+    );
+
+    transition:.8s;
+
+    z-index:5;
+
+}
+
+.program-card:hover::after{
+
+    left:100%;
+
+}
+
+/*=========================================
+ IMAGE EFFECT
+=========================================*/
+
+.program-card img{
+
+    transition:
+        transform .8s ease,
+        filter .8s ease;
+
+}
+
+.program-card:hover img{
+
+    transform:scale(1.08);
+
+    filter:brightness(.96);
+
+}
+
+/*=========================================
+ ICON EFFECT
+=========================================*/
+
+.program-card:hover .program-icon{
+
+    background:#181818;
+
+    color:#ffffff;
+
+    transform:
+        rotate(-10deg)
+        scale(1.08);
+
+}
+
+/*=========================================
+ TITLE EFFECT
+=========================================*/
+
+.program-content h3{
+
+    transition:.35s;
+
+}
+
+.program-card:hover .program-content h3{
+
+    color:#cf102d;
+
+}
+
+/*=========================================
+ SCROLL ANIMATION
+=========================================*/
+
+.program-card{
+
+    opacity:0;
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+.program-card:nth-child(2){
+
+    animation-delay:.1s;
+
+}
+
+.program-card:nth-child(3){
+
+    animation-delay:.2s;
+
+}
+
+.program-card:nth-child(4){
+
+    animation-delay:.3s;
+
+}
+
+.program-card:nth-child(5){
+
+    animation-delay:.4s;
+
+}
+
+.program-card:nth-child(6){
+
+    animation-delay:.5s;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(45px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/*=========================================
+ TABLET
+=========================================*/
+
+@media(max-width:992px){
+
+.programs{
+
+    padding:90px 0;
+
+}
+
+.programs-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+}
+
+.section-title p{
+
+    color:#666666;
+
+}
+
+.program-image{
+
+    height:220px;
+
+}
+
+.program-card{
+
+    margin:0;
+
+}
+
+.program-content{
+
+    padding:24px;
+
+}
+
+.program-content h3{
+
+    font-size:25px;
+
+}
+
+.program-content p{
+
+    color:#666666;
+
+}
+
+.program-icon{
+
+    left:24px;
+
+}
+
+}
+
+/*=========================================
+ MOBILE
+=========================================*/
+
+@media(max-width:576px){
+
+.programs{
+
+    padding:70px 0;
+
+    top:0;
+
+}
+
+.section-title{
+
+    margin-bottom:45px;
+
+}
+
+.section-title span{
+
+    font-size:12px;
+
+    padding:8px 16px;
+
+}
+
+.section-title h2{
+
+    font-size:30px;
+
+}
+
+.section-title p{
+
+    font-size:14px;
+
+    color:#666666;
+
+}
+
+.programs-grid{
+
+    grid-template-columns:1fr;
+
+    gap:22px;
+
+}
+
+.program-card{
+
+    margin:0;
+
+}
+
+.program-image{
+
+    height:210px;
+
+}
+
+.program-content{
+
+    padding:22px;
+
+}
+
+.program-icon{
+
+    width:50px;
+
+    height:50px;
+
+    font-size:20px;
+
+    left:22px;
+
+}
+
+.program-content h3{
+
+    font-size:22px;
+
+}
+
+.program-content p{
+
+    font-size:14px;
+
+    color:#666666;
+
+}
+
+.program-btn{
+
+    font-size:14px;
+
+}
+
+.programs-button{
+
+    margin-top:45px;
+
+}
+
+.programs-button button{
+
+    width:200px;
+
+    height:52px;
+
+    font-size:14px;
+
+}
+
+}
+
+/*=========================================
+ SMALL MOBILE
+=========================================*/
+
+@media(max-width:480px){
+
+.programs{
+
+top: -148px;
+        left: 15px;
+
+}
+
+.section-title{
+
+    width:92%;
+
+    margin:auto;
+
+    margin-bottom:40px;
+
+}
+
+.section-title span{
+
+    font-size:11px;
+
+    padding:7px 15px;
+
+}
+
+.section-title h2{
+
+    font-size:28px;
+
+    line-height:1.25;
+
+}
+
+.section-title p{
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+.program-image{
+
+    height:200px;
+
+}
+
+.program-content{
+
+    padding:20px;
+
+}
+
+.program-icon{
+
+    width:46px;
+
+    height:46px;
+
+    font-size:18px;
+
+    left:20px;
+
+    top:-23px;
+
+}
+
+.program-content h3{
+
+    font-size:20px;
+
+}
+
+.program-content p{
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+.program-btn{
+
+    font-size:13px;
+
+    gap:8px;
+
+}
+
+.programs-button button{
+
+    width:180px;
+
+    height:48px;
+
+    font-size:13px;
+
+}
+
+}

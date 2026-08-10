@@ -1,0 +1,26 @@
+:root {
+  /* Brand Colors */
+  --primary-color: #c1121f;
+  --primary-hover: #a30f1a;
+
+  /* Background Colors */
+  --bg-dark: #0f0f0f;
+  --bg-light: #f8f9fa;
+  --white: #ffffff;
+
+  /* Text Colors */
+  --heading-color: #111111;
+  --text-color: #666666;
+
+  /* Border */
+  --border-color: #e5e5e5;
+
+  /* Shadow */
+  --shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  /* Border Radius */
+  --radius: 12px;
+
+  /* Transition */
+  --transition: all 0.3s ease;
+}

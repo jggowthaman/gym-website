@@ -1,0 +1,1171 @@
+/* ==========================================
+   SPORTS ACADEMY
+========================================== */
+
+.academy{
+
+    width: 100%;
+    padding: 100px 0;
+    /* margin: 0; */
+    background: #080808;
+    position: relative;
+    bottom: 500px;
+
+
+}
+
+.academy-heading{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:auto;
+    margin-bottom:70px;
+
+    text-align:center;
+
+}
+
+.academy-tag{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:10px 24px;
+
+    background:#cf102d;
+
+    color:#fff;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:22px;
+
+    box-shadow:
+    0 10px 30px rgba(207,16,45,.18);
+
+}
+
+.academy-heading h2{
+
+    font-family:"Barlow",sans-serif;
+
+    font-size:56px;
+
+    font-weight:800;
+
+    color: #fff;
+
+    margin-bottom:18px;
+
+}
+
+.academy-heading p{
+
+    max-width:680px;
+
+    margin:auto;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    color:#d4d4d4;
+
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.academy-grid{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.academy-card{
+
+    position:relative;
+
+    height:340px;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    background:#fff;
+
+    border:1px solid #ececec;
+
+    box-shadow:
+
+    0 15px 45px rgba(0,0,0,.08);
+
+    transition:.45s ease;
+
+}
+
+.academy-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.8s;
+
+}
+
+.academy-card:hover img{
+
+    transform:scale(1.12);
+
+}
+
+/* ==========================================
+   IMAGE OVERLAY
+========================================== */
+
+.academy-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    padding:28px;
+
+    background:
+
+    linear-gradient(
+
+    180deg,
+
+    rgba(255,255,255,0),
+
+    rgba(255,255,255,.08),
+
+    rgba(0,0,0,.68)
+
+    );
+
+    z-index:2;
+
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.academy-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#cf102d;
+
+    color:#fff;
+
+    font-size:22px;
+
+    margin-bottom:18px;
+
+    transition:.4s;
+
+    box-shadow:
+
+    0 12px 25px rgba(207,16,45,.25);
+
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.academy-overlay h3{
+
+    font-family:"Barlow",sans-serif;
+
+    font-size:34px;
+
+    color:#ffffff;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+    transition:.35s;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.academy-overlay button{
+
+    width:170px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#cf102d;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.academy-overlay button:hover{
+
+    background:#181818;
+
+    color:#ffffff;
+
+}
+
+.academy-overlay button svg{
+
+    transition:.35s;
+
+}
+
+.academy-overlay button:hover svg{
+
+    transform:translateX(6px);
+
+}
+/* ==========================================
+   CTA CARD
+========================================== */
+
+.academy-cta{
+
+    position:relative;
+
+    overflow:hidden;
+
+    height:340px;
+
+    border-radius:28px;
+
+    padding:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    color:#fff;
+
+    background:
+    linear-gradient(
+        145deg,
+        #e53935,
+        #cf102d,
+        #b90d29
+    );
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+        0 20px 50px rgba(207,16,45,.22);
+
+    transition:.45s ease;
+
+}
+
+/* Decorative Circles */
+
+.academy-cta::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-100px;
+
+    right:-100px;
+
+}
+
+.academy-cta::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    bottom:-70px;
+
+    left:-70px;
+
+}
+
+.academy-cta>*{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* ==========================================
+   FLOATING FOOTBALL
+========================================== */
+
+.cta-ball{
+
+    position:absolute;
+
+    right:20px;
+
+    bottom:10px;
+
+    font-size:95px;
+
+    opacity:.18;
+
+    color:#fff;
+
+    pointer-events:none;
+
+    transform-origin:center;
+
+    animation:footballFloat 8s ease-in-out infinite;
+
+}
+
+/* Premium Floating Animation */
+
+@keyframes footballFloat{
+
+    0%{
+
+        transform:
+        translate(0,0)
+        rotate(0deg);
+
+    }
+
+    25%{
+
+        transform:
+        translate(-8px,-10px)
+        rotate(-6deg);
+
+    }
+
+    50%{
+
+        transform:
+        translate(6px,-22px)
+        rotate(6deg);
+
+    }
+
+    75%{
+
+        transform:
+        translate(-10px,-8px)
+        rotate(-4deg);
+
+    }
+
+    100%{
+
+        transform:
+        translate(0,0)
+        rotate(0deg);
+
+    }
+
+}
+
+/* ==========================================
+   CTA TITLE
+========================================== */
+
+.academy-cta h3{
+
+    font-family:"Barlow",sans-serif;
+
+    font-size:34px;
+
+    line-height:1.05;
+
+    font-weight:800;
+
+    margin-bottom:22px;
+
+}
+
+/* ==========================================
+   LIST
+========================================== */
+
+.academy-cta ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.academy-cta li{
+
+    position:relative;
+
+    padding-left:22px;
+
+    margin-bottom:12px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+.academy-cta li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:#fff;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   CTA BUTTON
+========================================== */
+
+.academy-cta button{
+
+    margin-top:auto;
+
+    width:185px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#fff;
+
+    color:#cf102d;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.academy-cta button svg{
+
+    transition:.35s;
+
+}
+
+.academy-cta button:hover{
+
+    background:#181818;
+
+    color:#fff;
+
+}
+
+.academy-cta button:hover svg{
+
+    transform:translateX(6px);
+
+}
+/*==========================================
+  PREMIUM HOVER EFFECTS
+==========================================*/
+
+.academy-card{
+
+    position:relative;
+
+    transition:
+    transform .45s ease,
+    box-shadow .45s ease;
+
+}
+
+.academy-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+        0 22px 50px rgba(0,0,0,.12);
+
+}
+
+/*==========================================
+  IMAGE ZOOM
+==========================================*/
+
+.academy-card img{
+
+    transition:
+    transform .8s ease,
+    filter .8s ease;
+
+}
+
+.academy-card:hover img{
+
+    transform:scale(1.12);
+
+    filter:brightness(.96);
+
+}
+
+/*==========================================
+  LIGHT OVERLAY
+==========================================*/
+
+.academy-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(255,255,255,0),
+        rgba(255,255,255,.08),
+        rgba(207,16,45,.12)
+    );
+
+    opacity:0;
+
+    transition:.45s;
+
+    z-index:1;
+
+}
+
+.academy-card:hover::before{
+
+    opacity:1;
+
+}
+
+/*==========================================
+  PREMIUM TOP GLOW
+==========================================*/
+
+.academy-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:3px;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        #cf102d,
+        transparent
+    );
+
+    transition:.8s;
+
+    z-index:5;
+
+}
+
+.academy-card:hover::after{
+
+    left:100%;
+
+}
+
+/*==========================================
+  ICON
+==========================================*/
+
+.academy-icon{
+
+    transition:.4s;
+
+}
+
+.academy-card:hover .academy-icon{
+
+    background:#181818;
+
+    color:#ffffff;
+
+    transform:
+        rotate(15deg)
+        scale(1.1);
+
+}
+
+/*==========================================
+  TITLE
+==========================================*/
+
+.academy-overlay h3{
+
+    transition:.35s;
+
+}
+
+.academy-card:hover h3{
+
+    color:#ffffff;
+
+}
+
+/*==========================================
+  BUTTON ICON
+==========================================*/
+
+.academy-overlay button svg,
+.academy-cta button svg{
+
+    transition:.35s;
+
+}
+
+.academy-overlay button:hover svg,
+.academy-cta button:hover svg{
+
+    transform:translateX(6px);
+
+}
+
+/*==========================================
+  CTA HOVER
+==========================================*/
+
+.academy-cta{
+
+    transition:
+        transform .45s ease,
+        box-shadow .45s ease;
+
+}
+
+.academy-cta:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+        0 22px 55px rgba(207,16,45,.28);
+
+}
+
+/*==========================================
+  SCROLL ANIMATION
+==========================================*/
+
+.academy-card{
+
+    opacity:0;
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+.academy-card:nth-child(2){
+
+    animation-delay:.1s;
+
+}
+
+.academy-card:nth-child(3){
+
+    animation-delay:.2s;
+
+}
+
+.academy-card:nth-child(4){
+
+    animation-delay:.3s;
+
+}
+
+.academy-card:nth-child(5){
+
+    animation-delay:.4s;
+
+}
+
+.academy-cta{
+
+    opacity:0;
+
+    animation:fadeUp .8s ease .5s forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(45px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:992px){
+
+.academy{
+
+    padding:80px 0;
+    margin: -201px 14px;
+    background:#ffffff;
+
+}
+
+.academy-heading{
+
+    width:92%;
+    margin-bottom:45px;
+
+}
+
+.academy-tag{
+
+    font-size:11px;
+    padding:8px 18px;
+
+}
+
+.academy-heading h2{
+
+    font-size:40px;
+    line-height:1.2;
+
+}
+
+.academy-heading p{
+
+    width:100%;
+    font-size:15px;
+    line-height:1.8;
+    color:#666;
+
+}
+
+.academy-grid{
+
+    width:92%;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+
+}
+
+.academy-card{
+
+    height:290px;
+    border-radius:22px;
+
+}
+
+.academy-overlay{
+
+    padding:20px;
+
+}
+
+.academy-icon{
+
+    width:48px;
+    height:48px;
+    font-size:18px;
+
+}
+
+.academy-overlay h3{
+
+    font-size:24px;
+
+}
+
+.academy-overlay button{
+
+    width:150px;
+    height:42px;
+    font-size:13px;
+
+}
+
+.academy-cta{
+
+    height:290px;
+    padding:28px;
+    border-radius:22px;
+
+}
+
+.academy-cta h3{
+
+    font-size:26px;
+
+}
+
+.academy-cta li{
+
+    font-size:14px;
+
+}
+
+.academy-cta button{
+
+    width:160px;
+    height:42px;
+    font-size:13px;
+
+}
+
+.cta-ball{
+
+    font-size:65px;
+    right:15px;
+    bottom:10px;
+
+}
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.academy{
+
+    padding:70px 0;
+
+}
+
+.academy-grid{
+
+    grid-template-columns:1fr;
+    gap:22px;
+
+}
+
+.academy-card{
+
+    height:250px;
+
+}
+
+.academy-overlay{
+
+    padding:18px;
+
+}
+
+.academy-icon{
+
+    width:42px;
+    height:42px;
+    font-size:16px;
+
+}
+
+.academy-overlay h3{
+
+    font-size:22px;
+
+}
+
+.academy-overlay button{
+
+    width:145px;
+    height:40px;
+    font-size:12px;
+
+}
+
+.academy-cta{
+
+    min-height:260px;
+    height:auto;
+
+    align-items:center;
+    text-align:center;
+
+    padding:25px;
+
+}
+
+.academy-cta h3{
+
+    font-size:28px;
+
+}
+
+.academy-cta ul{
+
+    margin:18px 0;
+
+}
+
+.academy-cta li{
+
+    padding-left:0;
+
+}
+
+.academy-cta li::before{
+
+    display:none;
+
+}
+
+.academy-cta button{
+
+    width:170px;
+    height:44px;
+
+}
+
+.cta-ball{
+
+    font-size:55px;
+    right:12px;
+    bottom:12px;
+    opacity:.15;
+
+}
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+.academy{
+
+    padding:60px 0;
+
+}
+
+.academy-heading{
+
+    margin-bottom:35px;
+
+}
+
+.academy-tag{
+
+    font-size:10px;
+    padding:7px 16px;
+
+}
+
+.academy-heading h2{
+
+    font-size:31px;
+
+}
+
+.academy-heading p{
+
+    font-size:14px;
+    line-height:1.7;
+
+}
+
+.academy-card{
+
+    height:220px;
+    border-radius:18px;
+
+}
+
+.academy-overlay{
+
+    padding:16px;
+
+}
+
+.academy-icon{
+
+    width:38px;
+    height:38px;
+    font-size:15px;
+
+}
+
+.academy-overlay h3{
+
+    font-size:20px;
+
+}
+
+.academy-overlay button{
+
+    width:130px;
+    height:38px;
+    font-size:11px;
+
+}
+
+.academy-cta{
+
+    min-height:220px;
+    padding:22px;
+    border-radius:18px;
+
+}
+
+.academy-cta h3{
+
+    font-size:22px;
+
+}
+
+.academy-cta li{
+
+    font-size:12px;
+
+}
+
+.academy-cta button{
+
+    width:150px;
+    height:40px;
+    font-size:12px;
+
+}
+
+.cta-ball{
+
+    font-size:45px;
+    right:10px;
+    bottom:8px;
+    opacity:.12;
+
+}
+
+}

@@ -1,0 +1,1211 @@
+/*=========================================
+ MEMBERSHIP SECTION
+=========================================*/
+
+.membership{
+
+    width:100%;
+    padding:110px 0;
+    background:#ffffff;
+    position:relative;
+    overflow:hidden;
+    bottom: 600px;
+
+}
+
+/*=========================================
+ BACKGROUND GLOW
+=========================================*/
+
+.membership::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+    height:420px;
+
+    top:-120px;
+    left:-120px;
+
+    border-radius:50%;
+
+    background:rgba(207,16,45,.05);
+
+    filter:blur(120px);
+
+}
+
+.membership::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+    height:420px;
+
+    bottom:-140px;
+    right:-140px;
+
+    border-radius:50%;
+
+    background:rgba(207,16,45,.05);
+
+    filter:blur(120px);
+
+}
+
+/*=========================================
+ CONTAINER
+=========================================*/
+
+.membership-container{
+
+    width:92%;
+    max-width:1350px;
+    margin:auto;
+    position:relative;
+    z-index:2;
+
+}
+
+/*=========================================
+ SECTION TITLE
+=========================================*/
+
+.membership .section-title{
+
+    text-align:center;
+    max-width:720px;
+    margin:0 auto 70px;
+
+}
+
+.membership .section-title span{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    background:#cf102d;
+
+    color:#fff;
+
+    border-radius:40px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    margin-bottom:18px;
+
+}
+
+.membership .section-title h2{
+
+    font-family:"Barlow",sans-serif;
+
+    font-size:54px;
+
+    font-weight:800;
+
+    color:#181818;
+
+    margin-bottom:20px;
+
+}
+
+.membership .section-title h2 span{
+
+    background:none;
+
+    padding:0;
+
+    color:#cf102d;
+
+}
+
+.membership .section-title p{
+
+    color:#666;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+/*=========================================
+ GRID
+=========================================*/
+
+.membership-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+    align-items:stretch;
+
+}
+
+/*=========================================
+ CARD
+=========================================*/
+
+.membership-card{
+
+    background:#ffffff;
+
+    border:1px solid #ececec;
+
+    border-radius:22px;
+
+    padding:45px 35px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.45s;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.membership-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#cf102d;
+
+    box-shadow:
+    0 25px 55px rgba(0,0,0,.12);
+
+}
+
+/*=========================================
+ FEATURED CARD
+=========================================*/
+
+.membership-card.featured{
+
+    background:#cf102d;
+
+    color:#fff;
+
+    transform:scale(1.04);
+
+}
+
+.membership-card.featured:hover{
+
+    transform:
+    translateY(-10px)
+    scale(1.04);
+
+}
+
+/*=========================================
+ POPULAR BADGE
+=========================================*/
+
+.popular-badge{
+
+    position:absolute;
+
+    top:18px;
+
+    right:-36px;
+
+    width:150px;
+
+    text-align:center;
+
+    padding:8px 0;
+
+    background:#181818;
+
+    color:#fff;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    transform:rotate(45deg);
+
+}
+
+/*=========================================
+ TITLE
+=========================================*/
+
+.membership-card h3{
+
+    font-family:"Barlow",sans-serif;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    color:#181818;
+
+}
+
+.membership-card.featured h3{
+
+    color:#ffffff;
+
+}
+
+/*=========================================
+ PRICE
+=========================================*/
+
+.price{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:10px;
+
+    margin-bottom:30px;
+
+}
+
+.price h2{
+
+    font-size:46px;
+
+    font-weight:800;
+
+    color:#cf102d;
+
+    line-height:1;
+
+}
+
+.price span{
+
+    color:#777;
+
+    font-size:15px;
+
+    margin-bottom:6px;
+
+}
+
+.membership-card.featured .price h2,
+.membership-card.featured .price span{
+
+    color:#ffffff;
+
+}
+/*=========================================
+ FEATURES LIST
+=========================================*/
+
+.membership-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 35px;
+
+}
+
+.membership-card ul li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:16px;
+
+    font-size:15px;
+
+    color:#555;
+
+    line-height:1.6;
+
+}
+
+.membership-card.featured ul li{
+
+    color:#ffffff;
+
+}
+
+/*=========================================
+ CHECK ICON
+=========================================*/
+
+.check-icon{
+
+    color:#cf102d;
+
+    font-size:18px;
+
+    flex-shrink:0;
+
+}
+
+.membership-card.featured .check-icon{
+
+    color:#ffffff;
+
+}
+
+/*=========================================
+ BUTTON
+=========================================*/
+
+.membership-card button{
+
+    width:100%;
+
+    height:56px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:14px;
+
+    background:#cf102d;
+
+    color:#ffffff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+    box-shadow:
+        0 12px 28px rgba(207,16,45,.22);
+
+}
+
+.membership-card button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 18px 38px rgba(207,16,45,.30);
+
+}
+
+.membership-card button svg{
+
+    transition:.35s;
+
+}
+
+.membership-card button:hover svg{
+
+    transform:translateX(6px);
+
+}
+
+/*=========================================
+ FEATURED BUTTON
+=========================================*/
+
+.membership-card.featured button{
+
+    background:#ffffff;
+
+    color:#cf102d;
+
+    box-shadow:
+        0 12px 28px rgba(255,255,255,.18);
+
+}
+
+.membership-card.featured button:hover{
+
+    background:#181818;
+
+    color:#ffffff;
+
+}
+
+/*=========================================
+ TESTIMONIAL CARD
+=========================================*/
+
+.testimonial-card{
+
+    background:#181818;
+
+    color:#ffffff;
+
+    border-radius:22px;
+
+    padding:40px 35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.18);
+
+    transition:.4s ease;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.testimonial-card h3{
+
+    font-family:"Barlow",sans-serif;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+.quote{
+
+    font-size:90px;
+
+    font-family:"Barlow",sans-serif;
+
+    color:#cf102d;
+
+    line-height:1;
+
+    margin-bottom:10px;
+
+}
+
+.testimonial-card p{
+
+    color:#d7d7d7;
+
+    line-height:1.9;
+
+    font-size:15px;
+
+    margin-bottom:35px;
+
+}
+
+/*=========================================
+ MEMBER
+=========================================*/
+
+.member{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+.member img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid rgba(255,255,255,.12);
+
+}
+
+.member h4{
+
+    color:#ffffff;
+
+    font-size:18px;
+
+    margin-bottom:4px;
+
+}
+
+.member span{
+
+    color:#bbbbbb;
+
+    font-size:14px;
+
+}
+
+/*=========================================
+ RATING
+=========================================*/
+
+.rating{
+
+    display:flex;
+
+    gap:8px;
+
+    color:#cf102d;
+
+    font-size:18px;
+
+}
+
+/*=========================================
+ PREMIUM HOVER EFFECT
+=========================================*/
+
+.membership-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,0),
+        rgba(255,255,255,.06),
+        rgba(207,16,45,.05)
+    );
+
+    opacity:0;
+
+    transition:.45s;
+
+    pointer-events:none;
+
+}
+
+.membership-card:hover::before{
+
+    opacity:1;
+
+}
+
+.membership-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:3px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #cf102d,
+        transparent
+    );
+
+    transition:.8s;
+
+}
+
+.membership-card:hover::after{
+
+    left:100%;
+
+}
+/*=========================================
+ PREMIUM EFFECTS (OPTIONAL)
+=========================================*/
+
+/* Floating animation */
+@keyframes floatCard{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+.membership-card:hover{
+    animation:floatCard 3s ease-in-out infinite;
+}
+
+/* Premium shine effect */
+.membership-card .shine{
+
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+
+}
+
+.membership-card .shine::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120%;
+
+    left:-60%;
+
+    width:60%;
+
+    height:250%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+    transform:rotate(25deg);
+
+    transition:1s;
+
+}
+
+.membership-card:hover .shine::before{
+
+    left:140%;
+
+}
+
+/* Button ripple */
+
+.membership-card button{
+
+    overflow:hidden;
+    position:relative;
+
+}
+
+.membership-card button::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+    height:0;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.25);
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    transition:.6s;
+
+}
+
+.membership-card button:hover::before{
+
+    width:320px;
+    height:320px;
+
+}
+
+/* Testimonial hover */
+
+.testimonial-card:hover .rating{
+
+    letter-spacing:3px;
+
+}
+
+.rating{
+
+    transition:.4s;
+
+}
+
+/* Price animation */
+
+.price h2{
+
+    transition:.35s;
+
+}
+
+.membership-card:hover .price h2{
+
+    transform:scale(1.08);
+
+}
+
+/* Image hover */
+
+.member img{
+
+    transition:.35s;
+
+}
+
+.testimonial-card:hover .member img{
+
+    transform:rotate(5deg) scale(1.08);
+
+}
+/*=========================================
+ TABLET
+=========================================*/
+
+@media (max-width: 992px){
+
+.membership{
+
+    padding:90px 0;
+
+}
+
+.membership .section-title{
+
+    margin-bottom:55px;
+
+}
+
+.membership .section-title h2{
+
+    font-size:42px;
+
+}
+
+.membership-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.membership-card{
+
+    padding:35px 28px;
+
+}
+
+.testimonial-card{
+
+    padding:35px 28px;
+
+}
+
+.price h2{
+
+    font-size:40px;
+
+}
+
+}
+
+/*=========================================
+ MOBILE
+=========================================*/
+
+@media (max-width:768px){
+
+.membership{
+
+    padding:80px 0;
+
+}
+
+.membership-grid{
+
+    grid-template-columns:1fr;
+
+    gap:22px;
+
+}
+
+.membership-card.featured{
+
+    transform:none;
+
+}
+
+.membership-card.featured:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.membership-card{
+
+    padding:32px 26px;
+
+}
+
+.testimonial-card{
+
+    padding:32px 26px;
+
+}
+
+.popular-badge{
+
+    width:135px;
+
+    right:-34px;
+
+    font-size:10px;
+
+}
+
+}
+
+/*=========================================
+ SMALL MOBILE
+=========================================*/
+
+@media (max-width:576px){
+
+.membership{
+
+    padding:70px 0;
+
+}
+
+.membership-container{
+
+    width:92%;
+
+}
+
+.membership .section-title{
+
+    margin-bottom:40px;
+
+}
+
+.membership .section-title span{
+
+    font-size:12px;
+
+    padding:8px 18px;
+
+}
+
+.membership .section-title h2{
+
+    font-size:31px;
+
+    line-height:1.25;
+
+}
+
+.membership .section-title p{
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+.membership-card{
+
+    padding:28px 22px;
+
+    border-radius:18px;
+
+}
+
+.membership-card h3{
+
+    font-size:24px;
+
+}
+
+.price{
+
+    gap:8px;
+
+    margin-bottom:24px;
+
+}
+
+.price h2{
+
+    font-size:36px;
+
+}
+
+.price span{
+
+    font-size:14px;
+
+}
+
+.membership-card ul{
+
+    margin-bottom:28px;
+
+}
+
+.membership-card ul li{
+
+    font-size:14px;
+
+    margin-bottom:14px;
+
+}
+
+.check-icon{
+
+    font-size:16px;
+
+}
+
+.membership-card button{
+
+    height:50px;
+
+    font-size:14px;
+
+}
+
+.testimonial-card{
+
+    padding:28px 22px;
+
+    border-radius:18px;
+
+}
+
+.testimonial-card h3{
+
+    font-size:24px;
+
+}
+
+.quote{
+
+    font-size:72px;
+
+}
+
+.testimonial-card p{
+
+    font-size:14px;
+
+    margin-bottom:28px;
+
+}
+
+.member img{
+
+    width:55px;
+
+    height:55px;
+
+}
+
+.member h4{
+
+    font-size:17px;
+
+}
+
+.member span{
+
+    font-size:13px;
+
+}
+
+.rating{
+
+    font-size:16px;
+
+    gap:6px;
+
+}
+
+}
+
+/*=========================================
+ EXTRA SMALL DEVICES
+=========================================*/
+
+@media (max-width:480px){
+
+.membership{
+
+    padding:0px 0;
+    bottom: 310px;
+
+}
+
+.membership-container{
+
+    width:94%;
+
+}
+
+.membership .section-title h2{
+
+    font-size:28px;
+
+}
+
+.membership-card{
+
+    padding:24px 18px;
+
+}
+
+.membership-card h3{
+
+    font-size:22px;
+
+}
+
+.price h2{
+
+    font-size:32px;
+
+}
+
+.price span{
+
+    font-size:13px;
+
+}
+
+.membership-card ul li{
+
+    font-size:13px;
+
+    gap:10px;
+
+}
+
+.membership-card button{
+
+    height:48px;
+
+    font-size:13px;
+
+}
+
+.popular-badge{
+
+    width:120px;
+
+    padding:7px 0;
+
+    right:-32px;
+
+    font-size:9px;
+
+}
+
+.testimonial-card{
+
+    padding:24px 18px;
+
+}
+
+.testimonial-card h3{
+
+    font-size:22px;
+
+}
+
+.quote{
+
+    font-size:60px;
+
+}
+
+.testimonial-card p{
+
+    font-size:13px;
+
+    line-height:1.8;
+
+}
+
+.member{
+
+    gap:12px;
+
+}
+
+.member img{
+
+    width:50px;
+
+    height:50px;
+
+}
+
+.member h4{
+
+    font-size:16px;
+
+}
+
+.member span{
+
+    font-size:12px;
+
+}
+
+.rating{
+
+    font-size:15px;
+
+}
+
+}
