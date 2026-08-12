@@ -46,7 +46,7 @@ const Footer = () => {
           max-w-7xl
           mx-auto
           px-5 sm:px-6 lg:px-8
-          py-12
+          py-5
           lg:py-16
         "
       >
@@ -204,9 +204,9 @@ const Footer = () => {
                 <p className="text-sm leading-6 m-0">
                   Ochre Fitness Center
                   <br />
-                  702 B Pandian Complex,
+                  702 B First Floor,
                   <br />
-                  First Floor, Ganagiri Road,
+                  Pandian Complex, Ganagiri Road,
                   <br />
                   Sivakasi, Tamil Nadu - 626189
                 </p>
@@ -253,7 +253,7 @@ const Footer = () => {
               {/* EMAIL */}
               <div className="flex items-start gap-3">
 
-                <i className="bi bi-envelope-fill text-red-600 text-lg mt-1 shrink-0"></i>
+                <i className="bi bi-envelope-fill text-red-600 text-lg  shrink-0"></i>
 
                 <a
                   href="mailto:Siva.Murugan24@gmail.com"
@@ -326,7 +326,7 @@ const Footer = () => {
           <p className="m-0 text-sm text-gray-500">
             Designed by{" "}
             <span className="text-red-600 font-semibold">
-              Webniqo
+              Webniqo & ByteBuilders &trade;
             </span>
           </p>
 

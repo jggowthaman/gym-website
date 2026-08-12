@@ -68,7 +68,7 @@ const Aboutsec2 = () => {
         </div>
 
         {/* Bottom Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-16 pt-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-16 pt-5">
 
           {/* Mission */}
           <div className="text-center lg:text-left">
@@ -105,7 +105,7 @@ const Aboutsec2 = () => {
           </div>
 
           {/* Values */}
-         <div className="text-center lg:text-left border-t sm:border-t-0 lg:border-l border-gray-200 pt-3 px-2 lg:pt-0 lg:pl-10">
+         <div className="text-center lg:text-left border-t sm:border-t-0 lg:border-l border-gray-200 pt-10 px-2 lg:pt-0 lg:pl-10">
             <i className="bi bi-heart text-6xl " style={{ color: "var(--primary-color) " }}></i>
 
             <h3 className="text-2xl font-bold mb-4">

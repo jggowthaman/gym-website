@@ -124,7 +124,7 @@ const Aboutsec1 = () => {
       </div>
 
       {/* Stats Section */}
-      <div className="relative px-4 sm:px-6 lg:px-8 -mt-10 lg:-mt-14 z-20 mb-4">
+      <div className="relative px-4 sm:px-6 lg:px-8 mt-4 lg:-mt-14 z-20 mb-4">
         <div
           className="
             max-w-7xl
