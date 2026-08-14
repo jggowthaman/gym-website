@@ -279,11 +279,15 @@ const Footer = () => {
                 <div className="text-sm leading-6">
 
                   <p className="m-0">
-                    Mon - Sat: 5:30 AM - 10:00 PM
+                    Mon - Sat: 05:00 AM - 09:00 PM
                   </p>
 
                   <p className="m-0">
                     Sun: 6:00 AM - 10:00 AM
+                  </p>
+
+                  <p className="m-0">
+                    Ladies Time: 10:00 AM - 03:00 PM
                   </p>
 
                 </div>
